@@ -153,6 +153,5 @@ namespace ThreadsInWPF.Code
             running2 = false;
         }
 
-        //PIKKKKKKKKKKKKKK
     }
 }
