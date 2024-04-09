@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>180</y>
+      <w>140</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Nøgleaktiviteter_*
+Produktion
+- Laver produkter i
+  form af projekter
+problemløsning
+- Er med til at 
+  udarbejde en 
+  løsning til sine
+  kunder
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>340</y>
+      <w>140</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Nøgleresourcer_*
+Fysiske
+- Maskiner og udstyr
+Menneskelige
+- Arbejdskraft
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>180</y>
+      <w>150</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Nøglepartnere_*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>180</y>
+      <w>150</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Værditilbud_*
+- Gode priser
+- Projekter i god 
+  kvalitet
+- Skræddersyede 
+  projekter til kunder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>790</x>
+      <y>180</y>
+      <w>140</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Kanaler_*
+Gennem sit netværk
+Online andre platforme
+- Gennem opslag</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>790</x>
+      <y>340</y>
+      <w>140</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Kunderelationer_*
+Kundehvervning
+- 
+Betjening
+- Tæt personlig relation
+Kundefastholdelse
+- Kundetilfredshed
+- Kunderelation
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>180</y>
+      <w>150</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Kundesegmenter_*
+Defferentieret marked
+- Private personer b2c
+- leasing af arbejdskraft 
+  til virksomheder b2b
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>500</y>
+      <w>360</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Indtægtsstrømme_*
+Engangsindtægt
+- Bestilling af projekter
+Gentagende indtægter
+- Leasing af VS tømre til andre virksomheder
+- vedligeholdnings aftaler
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>500</y>
+      <w>370</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Omkostningssktruktur_*
+Variable omkostninger: 
+- Materialer
+- Værktøj
+Faste omkostninger:
+- Lån
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
