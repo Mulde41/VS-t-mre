@@ -87,7 +87,7 @@ byder materiale
     <coordinates>
       <x>480</x>
       <y>120</y>
-      <w>204</w>
+      <w>216</w>
       <h>444</h>
     </coordinates>
     <panel_attributes>valign=center
@@ -120,7 +120,7 @@ _af projekters priser_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>684</x>
+      <x>696</x>
       <y>120</y>
       <w>192</w>
       <h>192</h>
@@ -142,7 +142,7 @@ Online andre platforme:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>684</x>
+      <x>696</x>
       <y>312</y>
       <w>192</w>
       <h>252</h>
@@ -167,7 +167,7 @@ _Bedre kunde tilfredshed_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>876</x>
+      <x>888</x>
       <y>120</y>
       <w>192</w>
       <h>444</h>
@@ -204,7 +204,7 @@ Tømrerkunder
     <coordinates>
       <x>588</x>
       <y>564</y>
-      <w>480</w>
+      <w>492</w>
       <h>204</h>
     </coordinates>
     <panel_attributes>valign=center
