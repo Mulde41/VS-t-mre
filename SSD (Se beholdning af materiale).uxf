@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>530</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>KvalitetsKritterier
+Afbilleder
+operationerne der udføres i en use case, samt hvad aktøren modtager fra
+systemet.
+1 aktør på venstre
+hånd og et system på højre hånd.
+Livslinjer går ned
+under aktør og system.
+Fra aktørens
+livslinje går der SystemEvents over mod systemet. Hvorpå systemet så håndtere
+en SystemOperation(På indersiden af systemet). SystemOperationen skal ikke
+visualiseres, da SSD'en er BlackBox og kun viser interaktionen mellem aktør og
+systemet på overfladen.
+SystemEvents
+navngives efter en opsumeret udgave af en komando fra aktøren til systemet
+SystemEvents har
+parameter, som kan udfyldes, med attributter fra berørte Domæneklasser.
+Fra System går der
+meddelseslinjer til aktøren, som er det aktøren får ved operationen.
+Kundesprog
+Sporbarhed mellem Use Case og Domænemodel
+CRUD må gerne bruges til navngivning af operation i SSD og OperationsKontrakt
+Hvis vi har lyst til engelsk i navngivning af operation, skal det nævnes i et glossary 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>20</y>
+      <w>300</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>halign=left
+Brief (Main sucess scenario)
+Titel: Se beholdning af materiale
+Aktør: Medarbejder
+
+Når en medarbejder vil se beholdningen for et
+materiale, tilgår de systemet og vælger ud 
+fra en oversigt af materialer. Her ser de en
+oversigt over materialets oplysninger,
+heriblandt beholdningen
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>960</x>
+      <y>290</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_:System_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1000</x>
+      <y>310</y>
+      <w>30</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>620</x>
+      <y>240</y>
+      <w>100</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Medarbejder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>330</y>
+      <w>30</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>350</y>
+      <w>370</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+SeMaterialeBeholdning(navn)</panel_attributes>
+    <additional_attributes>350.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>400</y>
+      <w>370</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+MaterialeInfo, navn</panel_attributes>
+    <additional_attributes>10.0;20.0;350.0;20.0</additional_attributes>
+  </element>
+</diagram>

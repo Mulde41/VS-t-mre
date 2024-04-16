@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>30</y>
+      <w>430</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>KvalitetsKritterier
+Systemkassen, som stor vertikal rektangel.
+Use Cases inde i systemkassen
+aktører på venstre hånd.
+Vis KUN aktører der interagere direkte med systemet.
+Pile fra aktøren til deres respektive UseCases.
+Kan vise relationen mellem Use Cases, ved brug af 
+stiplede linker, fx hvis en use case genbruger en anden use case.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>280</y>
+      <w>210</w>
+      <h>620</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>470</x>
+      <y>280</y>
+      <w>100</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Medarbejder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>710</x>
+      <y>290</y>
+      <w>190</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Se beholdning af materiale</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>320</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

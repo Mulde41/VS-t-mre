@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>13</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>208</x>
+      <y>65</y>
+      <w>182</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Nøgleaktiviteter_*
+Produktion
+- Laver produkter i
+  form af projekter
+  problemløsning
+- Er med til at 
+  udarbejde en 
+  løsning til sine
+  kunder
+group=group-0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>208</x>
+      <y>273</y>
+      <w>182</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Nøgleresourcer_*
+Fysiske
+- Maskiner og udstyr
+- Lager 
+Menneskelige
+- Arbejdskraft
+
+
+
+group=group-0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>13</x>
+      <y>65</y>
+      <w>195</w>
+      <h>416</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Nøglepartnere_*
+Partnerskaber med 
+gennem materiale 
+udbydere(billigere
+materialer)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+group=group-0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>65</y>
+      <w>195</w>
+      <h>416</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Værditilbud_*
+- Tilbyder tømre 
+  arbejde til  
+  privatkunder 
+  og leasing til 
+  virksomheder
+  
+- Gode priser
+
+- Projekter i god 
+  kvalitet
+  
+- Skræddersyede 
+  projekter til kunder
+
+
+
+
+
+group=group-0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>585</x>
+      <y>65</y>
+      <w>182</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Kanaler_*
+Gennem sit netværk
+Online andre platforme
+- Gennem opslag
+
+
+
+
+
+group=group-0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>585</x>
+      <y>273</y>
+      <w>182</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Kunderelationer_*
+Kundehvervning
+- 
+Betjening
+- Tæt personlig relation
+Kundefastholdelse
+- Kundetilfredshed
+- Kunderelation
+
+
+group=group-0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>767</x>
+      <y>65</y>
+      <w>208</w>
+      <h>416</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Kundesegmenter_*
+Defferentieret marked
+- Private personer b2c
+- leasing af arbejdskraft 
+  til virksomheder b2b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+group=group-0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>494</x>
+      <y>481</y>
+      <w>481</w>
+      <h>195</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Indtægtsstrømme_*
+Engangsindtægt
+- Bestilling af projekter
+Gentagende indtægter
+- Leasing af VS tømre til andre virksomheder
+- vedligeholdnings aftaler
+
+
+group=group-0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>13</x>
+      <y>481</y>
+      <w>481</w>
+      <h>195</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Omkostningssktruktur_*
+Variable omkostninger: 
+- Materialer
+- Værktøj
+Faste omkostninger:
+- Lån
+
+
+group=group-0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1456</x>
+      <y>0</y>
+      <w>195</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>halign=left
+Fremtidslærredet
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1274</x>
+      <y>65</y>
+      <w>182</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Nøgleaktiviteter_*
+
+
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1274</x>
+      <y>273</y>
+      <w>182</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Nøgleresourcer_*
+
+Projektstyingssystem
+
+Lagerstyringssystem
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1079</x>
+      <y>65</y>
+      <w>195</w>
+      <h>416</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Nøglepartnere_*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1456</x>
+      <y>65</y>
+      <w>195</w>
+      <h>416</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Værditilbud_*
+Hurtigere projekter
+
+mere præcise
+estimater for projekt-
+pris
+
+
+
+
+
+
+
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1651</x>
+      <y>65</y>
+      <w>182</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Kanaler_*
+
+
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1651</x>
+      <y>273</y>
+      <w>182</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Kunderelationer_*
+højere kunde
+tilfredshed
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1833</x>
+      <y>65</y>
+      <w>208</w>
+      <h>416</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Kundesegmenter_*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1560</x>
+      <y>481</y>
+      <w>481</w>
+      <h>195</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Indtægtsstrømme_*
+Mere effektiv projekt håndtering
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1079</x>
+      <y>481</y>
+      <w>481</w>
+      <h>195</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+*_Omkostningssktruktur_*
+Mindre spild i form af mere præcis bestilling af vare
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>0</y>
+      <w>195</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>halign=left
+Nutidslærredet
+
+
+
+group=group-0</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

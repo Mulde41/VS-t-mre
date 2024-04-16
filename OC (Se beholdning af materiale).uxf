@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>10</y>
+      <w>860</w>
+      <h>680</h>
+    </coordinates>
+    <panel_attributes>KvalitetsKritterier
+
+Tager udgangspunkt i en SSD og dens tilsvarende use case, samt klasser og deres attributter fra domæne
+modellen.
+
+4 kategorier. Operation, cross reference, preconditions, postconditions.
+
+Operation = En SystemEvent I SSD'en
+
+Cross reference = Reference
+til titlerne af brugte SSD’er Use cases osv i nuværende OC.
+
+Preconditions = Events der
+skal opnås før nuværende operation påbegynder.
+
+Postconditions indeholder
+instance creation(deletion), attribute changes in value og associations
+mellem objekter. Selve beskrivelse af system eventet når system
+operationen kaldes.
+
+Preconditions skrives erklærende. (ER sket)
+
+Postconditions skrives I passiv datid. (BLEV sket)
+
+OC indgår samme regler som Design artefakter, på trods af at være et analyse
+artefakt.
+
+Kodesprog
+
+Datatyper kobles på parametrene i Operationen.
+
+Man skriver kun en OC, hvis der er postconditions. 
+Altså hvis det der sker med SystemEventen, omhandler 
+Instance creation/deletion, attribute modification og association formed/broken. 
+Ellers er SystemEventen ikke interessant nok til en OC.
+
+Evt. tilknyt ObjektModellen til at visualisere hvor Preconditions og
+Postconditions berørerer stamdataen
+Skriv alle objekter og parametre med skråskrift i post- og preconditions 
+CRUD må gerne bruges til navngivning af operation i SSD og OperationsKontrakt
+Hvis vi har lyst til engelsk i navngivning af operation, skal det nævnes i et glossary 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>10</y>
+      <w>440</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>halign=left
+Brief (Main sucess scenario)
+Titel: Se beholdning af materiale
+Aktør: Medarbejder
+
+Når en medarbejder vil se beholdningen for et
+materiale, tilgår de systemet og vælger ud 
+fra en oversigt af materialer. Her ser de en
+oversigt over materialets oplysninger,
+heriblandt beholdningen
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
