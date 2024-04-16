@@ -12,7 +12,6 @@
     <panel_attributes>Materiale
 --
 Antal
-Navn
 Behandling
 </panel_attributes>
     <additional_attributes/>
@@ -145,7 +144,8 @@ Bredde</panel_attributes>
     </coordinates>
     <panel_attributes>Søm
 --
-Længde</panel_attributes>
+Længde
+Form</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
