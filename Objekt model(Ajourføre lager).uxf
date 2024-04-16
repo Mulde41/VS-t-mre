@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>260</y>
+      <x>630</x>
+      <y>150</y>
       <w>110</w>
       <h>30</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>730</x>
-      <y>260</y>
+      <x>850</x>
+      <y>150</y>
       <w>110</w>
       <h>30</h>
     </coordinates>
@@ -26,8 +26,8 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>750</x>
-      <y>310</y>
+      <x>870</x>
+      <y>200</y>
       <w>60</w>
       <h>50</h>
     </coordinates>
@@ -38,8 +38,8 @@ bg=white</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>750</x>
-      <y>370</y>
+      <x>870</x>
+      <y>260</y>
       <w>60</w>
       <h>50</h>
     </coordinates>
@@ -50,8 +50,8 @@ bg=white</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>750</x>
-      <y>430</y>
+      <x>870</x>
+      <y>320</y>
       <w>60</w>
       <h>50</h>
     </coordinates>
@@ -62,8 +62,8 @@ bg=white</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>750</x>
-      <y>490</y>
+      <x>870</x>
+      <y>380</y>
       <w>60</w>
       <h>50</h>
     </coordinates>
@@ -74,56 +74,65 @@ bg=white</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>470</x>
-      <y>480</y>
-      <w>180</w>
-      <h>170</h>
+      <x>620</x>
+      <y>320</y>
+      <w>130</w>
+      <h>120</h>
     </coordinates>
-    <panel_attributes>Fyr træs reglar 45x120x200
-5 stk
+    <panel_attributes>5 stk
+Reglar
+Fyrretræ  
+h:45mm
+b:120mm
+l:200cm
+
 bg=white</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>470</x>
-      <y>300</y>
-      <w>180</w>
-      <h>170</h>
+      <x>620</x>
+      <y>190</y>
+      <w>130</w>
+      <h>120</h>
     </coordinates>
-    <panel_attributes>Fyr træs reglar 45x120x230
-7 stk
-bg=white</panel_attributes>
+    <panel_attributes>7 stk
+Reglar
+Fyrretræ
+h:45mm
+b:120mm
+l:230cm
+bg=WHITE</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>640</x>
-      <y>330</y>
-      <w>130</w>
-      <h>80</h>
+      <x>740</x>
+      <y>220</y>
+      <w>150</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>110.0;10.0;10.0;60.0</additional_attributes>
+    <additional_attributes>130.0;10.0;10.0;21.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>640</x>
-      <y>510</y>
-      <w>130</w>
-      <h>80</h>
+      <x>710</x>
+      <y>400</y>
+      <w>180</w>
+      <h>210</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>110.0;10.0;10.0;60.0</additional_attributes>
+    <additional_attributes>160.0;10.0;10.0;190.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>200</x>
-      <y>260</y>
+      <x>320</x>
+      <y>150</y>
       <w>250</w>
       <h>520</h>
     </coordinates>
@@ -157,6 +166,51 @@ Kundesprog
 
 
 </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>620</x>
+      <y>450</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>0 stk
+Søm
+Bit x50
+d:4mm
+l:50mm
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>340</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;31.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>620</x>
+      <y>580</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>5 stk
+Skrue
+Bit x40
+d:4mm
+l:50mm
+
+
+bg=white</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
