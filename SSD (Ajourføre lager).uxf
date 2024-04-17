@@ -74,7 +74,7 @@ Hvis vi har lyst til engelsk i navngivning af operation, skal det nævnes i et g
     </coordinates>
     <panel_attributes>halign=left
 Brief (Main sucess scenario)
-Titel: Se beholdning af materiale
+Titel: Ajourføre lager
 Aktør: Medarbejder
 
 Når en medarbejder vil se beholdningen for et
@@ -153,5 +153,16 @@ SeMaterialeBeholdning(navn)</panel_attributes>
     <panel_attributes>lt=&lt;&lt;.
 MaterialeInfo, navn</panel_attributes>
     <additional_attributes>10.0;20.0;350.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>770</x>
+      <y>210</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*Ajourføre lager*</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
