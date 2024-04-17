@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>4</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>792</x>
+      <y>0</y>
+      <w>200</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Kvalitets kriterier
+Viser alle c# klasser der skal bruges i koden
+Bruger kodesprog
+engelsk
+1-1 med domænemodellens klasser i domain laget.
+Viser lagene i koden
+Viser hvilke klasser bruger hvad
+Viser alle felter, metoder og konstruktører i koden. Samt datatyper.
+Bevidst
+brug af lowercase/uppercase for at vise inkapsuleringsniveau, fx properties
+
+Brug
+af +- for at vise inkapsulering auto properties eller
+satte</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>952</x>
+      <y>292</y>
+      <w>76</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>Location
+--
++ Position : string
+--
++ Location(Position : string)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>264</y>
+      <w>12</w>
+      <h>268</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;650.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>264</y>
+      <w>12</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;640.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>264</y>
+      <w>12</w>
+      <h>268</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;650.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>268</y>
+      <w>12</w>
+      <h>272</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;660.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>956</x>
+      <y>244</y>
+      <w>40</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>Model</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>708</x>
+      <y>248</y>
+      <w>40</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>Persistence</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>408</x>
+      <y>252</y>
+      <w>40</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>Viewmodel</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>116</x>
+      <y>256</y>
+      <w>40</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>952</x>
+      <y>376</y>
+      <w>76</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>/Material/
+--
++ Quantity : int
++ Treatement : string
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>728</x>
+      <y>416</y>
+      <w>84</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>MaterialRepository
+--
+- materials : Material[0..]
+--
++ MaterialRepository()
++ Get(Name : string) : Material
++ GetAll() : materials</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>636</x>
+      <y>416</y>
+      <w>84</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>LocationRepository
+--
+- locations : location[0..]
+--
++ LocationRepository()
++ Get(LocationId : string)
++ GetAll() : location</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>112</x>
+      <y>364</y>
+      <w>84</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>MainView : Window
+--
+- mvm : MainViewModel
+--
++ MainView()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>288</x>
+      <y>276</y>
+      <w>136</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes>MainViewModel
+--
+- materialRepo : MaterialRepository
+- locationRepo : LocationRepository
++ MaterialViewModels : MaterialViewModel[0..]
++ LocationViewModels : LocationViewModel[0..]
+- selectedMaterial : MaterialViewModel
+- selectedlocation : LocationViewModel
+--
++ SelectedMaterial(material : MaterialViewModel)
++ SelectedLocation(location : LocationViewModel)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>308</y>
+      <w>224</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;470.0;10.0;470.0;340.0;540.0;340.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>300</y>
+      <w>104</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>240.0;10.0;110.0;10.0;110.0;230.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>12</x>
+      <y>364</y>
+      <w>84</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>MainView
+--
+lbMaterial : Listbox
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>92</x>
+      <y>384</y>
+      <w>28</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>676</x>
+      <y>308</y>
+      <w>100</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+IRepository
+--
++ Get(T : t) : T
++ GetAll() : List&lt;T&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>768</x>
+      <y>104</y>
+      <w>248</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>Få afklaret med lære</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>832</x>
+      <y>464</y>
+      <w>84</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Wood
+--
+Sort : string
+Type : string
+Height : double
+Length : double
+Width : double
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>896</x>
+      <y>448</y>
+      <w>48</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>Should Sort and
+Type be enums?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>948</x>
+      <y>452</y>
+      <w>84</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Screw
+--
+ScrewHead : string
+Length : double
+Diameter : double
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1016</x>
+      <y>436</y>
+      <w>56</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Should ScrewHead
+be an enum?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1052</x>
+      <y>468</y>
+      <w>84</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Nail
+--
+Length : double
+Form : string
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1120</x>
+      <y>448</y>
+      <w>48</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Should Form be
+an enum?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>424</y>
+      <w>148</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>350.0;110.0;350.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>872</x>
+      <y>424</y>
+      <w>92</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>988</x>
+      <y>404</y>
+      <w>12</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>808</x>
+      <y>384</y>
+      <w>152</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;150.0;110.0;150.0;110.0;20.0;360.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1020</x>
+      <y>404</y>
+      <w>52</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Are we going to
+need more devried
+classes?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>984</x>
+      <y>340</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>988</x>
+      <y>340</y>
+      <w>12</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>300</y>
+      <w>332</w>
+      <h>124</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;490.0;10.0;490.0;260.0;810.0;260.0;810.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>356</y>
+      <w>60</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;130.0;70.0;130.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>676</x>
+      <y>376</y>
+      <w>56</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=.
+</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>276</x>
+      <y>384</y>
+      <w>76</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>LocationViewModel
+--
++ Position : string
+--
++ Location(Position : string)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>368</x>
+      <y>384</y>
+      <w>76</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>/MaterialViewModel/
+--
++ Quantity : int
++ Treatement : string
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>364</x>
+      <y>460</y>
+      <w>84</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>ScrewViewModel
+--
+ScrewHead : string
+Length : double
+Diameter : double
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>476</y>
+      <w>84</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>NailViewModel
+--
+Length : double
+Form : string
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>368</x>
+      <y>432</y>
+      <w>148</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>350.0;110.0;350.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>432</y>
+      <w>92</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>404</x>
+      <y>412</y>
+      <w>12</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>248</x>
+      <y>472</y>
+      <w>84</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>WoodViewModel
+--
+Sort : string
+Type : string
+Height : double
+Length : double
+Width : double
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>536</x>
+      <y>456</y>
+      <w>48</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Should Form be
+an enum?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>432</x>
+      <y>444</y>
+      <w>56</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Should ScrewHead
+be an enum?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>436</x>
+      <y>412</y>
+      <w>52</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Are we going to
+need more devried
+classes?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>312</x>
+      <y>456</y>
+      <w>48</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>Should Sort and
+Type be enums?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>348</y>
+      <w>12</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>308</x>
+      <y>348</y>
+      <w>12</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+</diagram>
