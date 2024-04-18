@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>10</zoom_level>
+  <zoom_level>11</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>250</x>
+      <x>297</x>
       <y>0</y>
-      <w>780</w>
-      <h>200</h>
+      <w>858</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>Kvalitets kriterier
 Inde I blackboksen
@@ -25,10 +25,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>110</x>
-      <y>440</y>
-      <w>30</w>
-      <h>70</h>
+      <x>143</x>
+      <y>484</y>
+      <w>33</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
@@ -36,10 +36,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>110</x>
-      <y>490</y>
-      <w>20</w>
-      <h>190</h>
+      <x>143</x>
+      <y>539</y>
+      <w>22</w>
+      <h>209</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -47,10 +47,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>110</x>
-      <y>670</y>
-      <w>30</w>
-      <h>90</h>
+      <x>143</x>
+      <y>737</y>
+      <w>33</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
@@ -58,10 +58,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>10</x>
-      <y>470</y>
-      <w>120</w>
-      <h>40</h>
+      <x>33</x>
+      <y>517</y>
+      <w>132</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 </panel_attributes>
@@ -70,10 +70,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>0</x>
-      <y>480</y>
-      <w>20</w>
-      <h>20</h>
+      <x>22</x>
+      <y>528</y>
+      <w>22</w>
+      <h>22</h>
     </coordinates>
     <panel_attributes>type=initial</panel_attributes>
     <additional_attributes/>
@@ -81,10 +81,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>60</x>
-      <y>420</y>
-      <w>120</w>
-      <h>30</h>
+      <x>88</x>
+      <y>462</y>
+      <w>132</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>_:MainView_</panel_attributes>
     <additional_attributes/>
@@ -92,10 +92,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>330</x>
-      <y>420</y>
-      <w>140</w>
-      <h>30</h>
+      <x>385</x>
+      <y>462</y>
+      <w>154</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>_:MainViewModel_</panel_attributes>
     <additional_attributes/>
@@ -103,10 +103,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>120</x>
-      <y>490</y>
-      <w>290</w>
-      <h>40</h>
+      <x>154</x>
+      <y>539</y>
+      <w>319</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 &lt;&lt;event&gt;&gt;SelectedMaterial(materialVM)</panel_attributes>
@@ -115,10 +115,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>440</y>
-      <w>30</w>
-      <h>80</h>
+      <x>451</x>
+      <y>484</y>
+      <w>33</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
@@ -126,10 +126,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>580</x>
-      <y>420</y>
-      <w>140</w>
-      <h>30</h>
+      <x>660</x>
+      <y>462</y>
+      <w>154</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>_:MaterialViewModel_</panel_attributes>
     <additional_attributes/>
@@ -137,10 +137,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>640</x>
-      <y>440</y>
-      <w>30</w>
-      <h>90</h>
+      <x>726</x>
+      <y>484</y>
+      <w>33</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
@@ -148,10 +148,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>500</y>
-      <w>260</w>
-      <h>50</h>
+      <x>462</x>
+      <y>550</y>
+      <w>286</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 &lt;&lt;constructor&gt;&gt;MaterialViewModel()
@@ -161,10 +161,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>120</x>
-      <y>590</y>
-      <w>290</w>
-      <h>40</h>
+      <x>154</x>
+      <y>649</y>
+      <w>319</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;event&gt;&gt;Display information</panel_attributes>
@@ -173,10 +173,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>650</y>
-      <w>30</w>
-      <h>110</h>
+      <x>451</x>
+      <y>715</y>
+      <w>33</w>
+      <h>121</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
@@ -184,10 +184,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>640</x>
-      <y>590</y>
-      <w>30</w>
-      <h>170</h>
+      <x>726</x>
+      <y>649</y>
+      <w>33</w>
+      <h>187</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
@@ -195,10 +195,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>820</x>
-      <y>420</y>
-      <w>140</w>
-      <h>30</h>
+      <x>924</x>
+      <y>462</y>
+      <w>154</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>_:MaterialRepository_</panel_attributes>
     <additional_attributes/>
@@ -206,10 +206,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>600</y>
-      <w>500</w>
-      <h>50</h>
+      <x>462</x>
+      <y>660</y>
+      <w>550</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 &lt;&lt;constructor&gt;&gt;MaterialRepository()
@@ -219,10 +219,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>880</x>
-      <y>520</y>
-      <w>20</w>
-      <h>110</h>
+      <x>990</x>
+      <y>572</y>
+      <w>22</w>
+      <h>121</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -230,10 +230,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>880</x>
-      <y>440</y>
-      <w>30</w>
-      <h>100</h>
+      <x>990</x>
+      <y>484</y>
+      <w>33</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
@@ -241,10 +241,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>390</x>
-      <y>500</y>
-      <w>20</w>
-      <h>160</h>
+      <x>451</x>
+      <y>550</y>
+      <w>22</w>
+      <h>176</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -252,10 +252,10 @@ Ved fuldtopstrukkede linjer forstås implicit retur, ved mindre andet er fortalt
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>510</y>
-      <w>250</w>
-      <h>50</h>
+      <x>737</x>
+      <y>561</y>
+      <w>275</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 personRepo.Get(materialVM)
@@ -265,10 +265,10 @@ personRepo.Get(materialVM)
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>570</y>
-      <w>260</w>
-      <h>40</h>
+      <x>462</x>
+      <y>627</y>
+      <w>286</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 materialVM</panel_attributes>
@@ -277,10 +277,10 @@ materialVM</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>880</x>
-      <y>620</y>
-      <w>30</w>
-      <h>130</h>
+      <x>990</x>
+      <y>682</y>
+      <w>33</w>
+      <h>143</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
@@ -288,10 +288,10 @@ materialVM</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>40</x>
-      <y>260</y>
-      <w>380</w>
-      <h>140</h>
+      <x>66</x>
+      <y>286</y>
+      <w>418</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>*Ajourføre lager:*
 A user interacts with the UI, which sends a message to
@@ -306,10 +306,10 @@ Material class.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>890</x>
-      <y>500</y>
-      <w>420</w>
-      <h>280</h>
+      <x>1001</x>
+      <y>550</y>
+      <w>462</w>
+      <h>308</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 Stored data (Material)</panel_attributes>
@@ -318,10 +318,10 @@ Stored data (Material)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1250</x>
-      <y>760</y>
-      <w>80</w>
-      <h>30</h>
+      <x>1397</x>
+      <y>836</y>
+      <w>88</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>Database</panel_attributes>
     <additional_attributes/>
@@ -329,10 +329,10 @@ Stored data (Material)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>640</x>
-      <y>510</y>
-      <w>20</w>
-      <h>90</h>
+      <x>726</x>
+      <y>561</y>
+      <w>22</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -340,10 +340,10 @@ Stored data (Material)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>560</y>
-      <w>250</w>
-      <h>40</h>
+      <x>737</x>
+      <y>616</y>
+      <w>275</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 materialVM</panel_attributes>
@@ -352,10 +352,10 @@ materialVM</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1070</x>
-      <y>420</y>
-      <w>140</w>
-      <h>30</h>
+      <x>1199</x>
+      <y>462</y>
+      <w>154</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>_:Material_</panel_attributes>
     <additional_attributes/>
@@ -363,10 +363,10 @@ materialVM</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1130</x>
-      <y>440</y>
-      <w>30</w>
-      <h>120</h>
+      <x>1265</x>
+      <y>484</y>
+      <w>33</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -374,10 +374,10 @@ materialVM</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1130</x>
-      <y>540</y>
-      <w>20</w>
-      <h>70</h>
+      <x>1265</x>
+      <y>594</y>
+      <w>22</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -385,10 +385,10 @@ materialVM</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1130</x>
-      <y>600</y>
-      <w>30</w>
-      <h>150</h>
+      <x>1265</x>
+      <y>660</y>
+      <w>33</w>
+      <h>165</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
@@ -396,10 +396,10 @@ materialVM</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>890</x>
-      <y>530</y>
-      <w>260</w>
-      <h>50</h>
+      <x>1001</x>
+      <y>583</y>
+      <w>286</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 List&lt;Material&gt; materials = new()
@@ -409,13 +409,347 @@ List&lt;Material&gt; materials = new()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>890</x>
-      <y>550</y>
-      <w>260</w>
-      <h>40</h>
+      <x>1001</x>
+      <y>605</y>
+      <w>286</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 materials</panel_attributes>
     <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>154</x>
+      <y>968</y>
+      <w>22</w>
+      <h>22</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>396</x>
+      <y>880</y>
+      <w>154</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>_:MainViewModel_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>165</x>
+      <y>957</y>
+      <w>319</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+&lt;&lt;event&gt;&gt;SelectedMaterial(materialVM)</panel_attributes>
+    <additional_attributes>270.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>462</x>
+      <y>902</y>
+      <w>33</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>671</x>
+      <y>880</y>
+      <w>154</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>_:MaterialViewModel_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>737</x>
+      <y>902</y>
+      <w>33</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>473</x>
+      <y>968</y>
+      <w>286</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+&lt;&lt;constructor&gt;&gt;MaterialViewModel()
+</panel_attributes>
+    <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>165</x>
+      <y>1067</y>
+      <w>319</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;event&gt;&gt;Display information</panel_attributes>
+    <additional_attributes>10.0;20.0;270.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>462</x>
+      <y>1133</y>
+      <w>33</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>737</x>
+      <y>1067</y>
+      <w>33</w>
+      <h>187</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>935</x>
+      <y>880</y>
+      <w>154</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>_:MaterialRepository_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>473</x>
+      <y>1078</y>
+      <w>550</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+&lt;&lt;constructor&gt;&gt;MaterialRepository()
+</panel_attributes>
+    <additional_attributes>480.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1001</x>
+      <y>990</y>
+      <w>22</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1001</x>
+      <y>902</y>
+      <w>33</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>462</x>
+      <y>968</y>
+      <w>22</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>748</x>
+      <y>979</y>
+      <w>275</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+personRepo.Get(materialVM)
+</panel_attributes>
+    <additional_attributes>230.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>473</x>
+      <y>1045</y>
+      <w>286</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+materialVM</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1001</x>
+      <y>1100</y>
+      <w>33</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1012</x>
+      <y>968</y>
+      <w>462</w>
+      <h>308</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+Stored data (Material)</panel_attributes>
+    <additional_attributes>10.0;20.0;400.0;20.0;400.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1408</x>
+      <y>1254</y>
+      <w>88</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Database</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>737</x>
+      <y>979</y>
+      <w>22</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>748</x>
+      <y>1034</y>
+      <w>275</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+materialVM</panel_attributes>
+    <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1210</x>
+      <y>880</y>
+      <w>154</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>_:Material_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1276</x>
+      <y>902</y>
+      <w>33</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1276</x>
+      <y>1012</y>
+      <w>22</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1276</x>
+      <y>1078</y>
+      <w>33</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1012</x>
+      <y>1001</y>
+      <w>286</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+List&lt;Material&gt; materials = new()
+</panel_attributes>
+    <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1012</x>
+      <y>1023</y>
+      <w>286</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+materials</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>154</x>
+      <y>1078</y>
+      <w>22</w>
+      <h>22</h>
+    </coordinates>
+    <panel_attributes>
+bg=white</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
