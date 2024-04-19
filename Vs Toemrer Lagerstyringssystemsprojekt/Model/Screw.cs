@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
 {
-    public class Wood : Material
+    public class Screw : Material
     {
-        public string Sort { get; set; }
-        public string Type { get; set; }
-        public double Height { get; set; }
+        public string ScrewHead { get; set; }
         public double Length { get; set; }
-        public double Width { get; set; }
-
+        public double Diameter { get; set; }
     }
 }

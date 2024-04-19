@@ -1,18 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
 {
-    public class Wood : Material
+    public class Nail
     {
-        public string Sort { get; set; }
-        public string Type { get; set; }
-        public double Height { get; set; }
         public double Length { get; set; }
-        public double Width { get; set; }
-
+        public string Form { get; set; }
     }
 }
