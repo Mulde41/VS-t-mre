@@ -9,5 +9,9 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
     public class Location
     {
         public string Position { get; set; }
+        public Location(string position)
+        {
+            this.Position = position;
+        }
     }
 }

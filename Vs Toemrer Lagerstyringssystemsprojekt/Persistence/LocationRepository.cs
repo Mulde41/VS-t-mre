@@ -31,10 +31,10 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
                 {
                     while (reader.Read())
                     {
-                        Location location = new Location
-                        {
-                            Position = reader["Position"].ToString(),
-                        };
+                        string position = reader["Position"].ToString();
+
+                        Location location = new Location(position);
+
                         _locations.Add(location);
                     }
                 }
