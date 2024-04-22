@@ -10,6 +10,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
     {
         public int Quantity { get; set; }
         public string Treatment { get; set; }
+        public string MaterialType { get; set; }
 
     }
 }

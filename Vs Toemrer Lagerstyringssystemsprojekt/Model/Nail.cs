@@ -11,5 +11,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
     {
         public double Length { get; set; }
         public string Form { get; set; }
+        
     }
 }
