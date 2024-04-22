@@ -1,16 +1,21 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration.Json;
+using System.Windows.Controls;
+using System.Windows.Navigation;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 {
     public class LocationRepository : IRepository<Location>
     {
         private List<Location> _locations = new List<Location>();
-
+        
         public LocationRepository()
         {
             InitializeRepository();
@@ -18,17 +23,31 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 
         private void InitializeRepository()
         {
-            throw new NotImplementedException();
+            using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
+            {
+                SqlCommand command = new SqlCommand("SELECT * FROM LOCATION", connection);
+                connection.Open();
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Location location = new Location
+                        {
+                            Position = reader["Position"].ToString(),
+                        };
+                        _locations.Add(location);
+                    }
+                }
+            }
         }
-
-        public Location Get(Location location)
+        public Location Get(string position)
         {
             foreach (Location loc in _locations)
             {
-                if (loc.Position == location.Position)
+                if (loc.Position == position)
                     return loc;
             }
-            throw new ArgumentException("Location not found or is null");
+            throw new ArgumentException("Location not found.");
         }
         public List<Location> GetAll()
         {
