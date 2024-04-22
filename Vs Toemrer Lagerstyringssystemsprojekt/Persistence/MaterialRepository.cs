@@ -25,7 +25,45 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
             using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
             {
                 connection.Open();
-                SqlCommand command = new SqlCommand("SELECT * FROM WOOD", connection);
+
+                SqlCommand command = new SqlCommand("SELECT * FROM WOOD_MATERIAL", connection);
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        //SPØRG LEIF
+                        Wood wood = new Wood
+                        (
+                            reader["Sort"].ToString(),
+                            reader["Type"].ToString(),
+                            Convert.ToDouble(reader["Height"].ToString),
+                            Convert.ToDouble(reader["Length"].ToString),
+                            Convert.ToDouble(reader["Width"].ToString)
+                        );
+                        materials.Add(wood);
+                    }
+                }
+
+                command = new SqlCommand("SELECT * FROM NAIL_MATERIAL", connection);
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Nail nail = new Nail
+                        (
+                            Convert.ToDouble(reader["Length"].ToString()),
+                            reader["Form"].ToString()
+                        );
+                        //{
+                        //    Length = Convert.ToDouble(reader["Length"].ToString()),
+                        //    Form = reader["Form"].ToString(),
+                        //    Quantity = int.Parse(reader["Quantity"].ToString()),
+                        //    Treatment = reader["Treatment"].ToString()
+                        //};
+                        materials.Add(nail);
+                    }
+                }
+                command = new SqlCommand("SELECT * FROM SCREW_MATERIAL", connection);
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -46,12 +84,12 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 
         public Material Get(Material t)
         {
-            throw new NotImplementedException();
+
         }
 
         List<Material> IRepository<Material>.GetAll()
         {
-            throw new NotImplementedException();
+
         }
     }
 }
