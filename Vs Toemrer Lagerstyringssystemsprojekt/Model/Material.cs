@@ -10,7 +10,10 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
     {
         public int Quantity { get; set; }
         public string Treatment { get; set; }
-        public string MaterialType { get; set; }
-
+        protected Material(int quantity, string treatment)
+        {
+            this.Treatment = treatment;
+            this.Quantity = quantity;
+        }
     }
 }

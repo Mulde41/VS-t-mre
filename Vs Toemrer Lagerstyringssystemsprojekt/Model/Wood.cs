@@ -14,16 +14,13 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
         public double Length { get; set; }
         public double Width { get; set; }
 
-        public Wood(string Sort, string Type, double Height, double Length, double Width) : base()
+        public Wood(string Sort, string Type, double Height, double Length, double Width, int Quantity, string Treatment) : base(Quantity, Treatment)
         {
             this.Sort = Sort;
             this.Type = Type;
             this.Height = Height;
             this.Length = Length;
             this.Width = Width;
-            Quantity = base.Quantity;
-            Treatment = base.Treatment;
-
         }
         
     }

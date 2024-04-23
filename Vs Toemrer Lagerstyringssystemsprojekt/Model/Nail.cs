@@ -12,10 +12,12 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
         public double Length { get; set; }
         public string Form { get; set; }
 
-        public Nail(double Length, string Form) : base(Quantity,Treatment)
+        public Nail(double Length, string Form, int Quantity, string Treatment) : base(Quantity, Treatment)
         {
             this.Length = Length;
             this.Form = Form;
+            base.Treatment = Treatment;
+            base.Quantity = Quantity;
         }
     }
 }
