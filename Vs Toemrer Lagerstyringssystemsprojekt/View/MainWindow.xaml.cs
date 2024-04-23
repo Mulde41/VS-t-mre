@@ -20,5 +20,35 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt
         {
             InitializeComponent();
         }
+
+        private void btnTree_Click(object sender, RoutedEventArgs e)
+        {
+            ClearMainWindow();
+            PopulateItems();
+           
+        }
+
+        private void ClearMainWindow()
+        {
+            btnTree.Visibility = Visibility.Collapsed;
+            lbTree.Visibility = Visibility.Visible;
+            lbTree.Items.Clear();
+        }
+
+        private void PopulateItems()
+        {
+            List<string> tree = new List<string>
+            {
+                "tree 1",
+                "tree 2",
+                "tree 3"
+            };
+
+            foreach (string item in tree)
+            {
+                lbTree.Items.Add(item);
+            }
+
+        }
     }
 }
