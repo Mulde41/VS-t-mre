@@ -7,9 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnTree" Content="Træ" HorizontalAlignment="Left" Margin="80,148,0,0" VerticalAlignment="Top" Height="85" Width="149" Click="btnTree_Click"/>
-        <Button x:Name="btnScew" Content="Skrue" HorizontalAlignment="Center" Margin="0,148,0,0" VerticalAlignment="Top" Height="85" Width="148"/>
-        <Button x:Name="btnNail" Content="Søm" HorizontalAlignment="Left" Margin="547,148,0,0" VerticalAlignment="Top" Height="85" Width="149"/>
+        <Button x:Name="btnTree" HorizontalAlignment="Left" Background="Transparent" Margin="150,148,0,0" VerticalAlignment="Top" Height="85" Width="149" Click="btnTree_Click">
+            <Button.Content>
+                <Image Source="pack://application:,,,/Vs Toemrer Lagerstyringssystemsprojekt;component/Images/woodMaterial.jpg" Height="85" Width="125" />
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="btnScrew" HorizontalAlignment="Center" Background="Transparent" Margin="100,148,0,0" VerticalAlignment="Top" Height="85" Width="148" Click="btnTree_Click">
+            <Button.Content>
+                <Image Source="pack://application:,,,/Vs Toemrer Lagerstyringssystemsprojekt;component/Images/screwMaterial.jpg" Height="85" Width="125" />
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="btnNail" HorizontalAlignment="Left" Background="Transparent" Margin="600,148,0,0" VerticalAlignment="Top" Height="85" Width="148" Click="btnTree_Click">
+            <Button.Content>
+                <Image Source="pack://application:,,,/Vs Toemrer Lagerstyringssystemsprojekt;component/Images/nailMaterial.jpg" Height="85" Width="125" />
+            </Button.Content>
+        </Button>
+
+
+
         <ListBox x:Name="lbTree" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20" Visibility="Collapsed"/>
+        <Label Content="Wood Boiiii" HorizontalAlignment="Left" Margin="189,238,0,0" VerticalAlignment="Top"/>
+        <Label Content="Skruer" HorizontalAlignment="Left" Margin="428,238,0,0" VerticalAlignment="Top"/>
+        <Label Content="Søm" HorizontalAlignment="Left" Margin="657,238,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
