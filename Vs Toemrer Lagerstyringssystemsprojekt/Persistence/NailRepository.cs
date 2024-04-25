@@ -42,7 +42,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
                 }
             }
         }
-        public Nail Get(Nail t)
+        public Nail Get(string t)
         {
             throw new NotImplementedException();
         }

@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1320</x>
+      <x>1170</x>
       <y>0</y>
       <w>300</w>
       <h>150</h>
@@ -28,7 +28,7 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1560</x>
+      <x>1410</x>
       <y>438</y>
       <w>114</w>
       <h>78</h>
@@ -43,7 +43,7 @@ satte</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1062</x>
+      <x>912</x>
       <y>396</y>
       <w>18</w>
       <h>402</h>
@@ -54,7 +54,7 @@ satte</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1362</x>
+      <x>1212</x>
       <y>396</y>
       <w>18</w>
       <h>396</h>
@@ -65,7 +65,7 @@ satte</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>462</x>
+      <x>312</x>
       <y>396</y>
       <w>18</w>
       <h>402</h>
@@ -76,7 +76,7 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1566</x>
+      <x>1416</x>
       <y>366</y>
       <w>60</w>
       <h>18</h>
@@ -87,7 +87,7 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1194</x>
+      <x>1044</x>
       <y>372</y>
       <w>60</w>
       <h>18</h>
@@ -98,7 +98,7 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>744</x>
+      <x>594</x>
       <y>378</y>
       <w>60</w>
       <h>18</h>
@@ -109,7 +109,7 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>306</x>
+      <x>156</x>
       <y>384</y>
       <w>60</w>
       <h>18</h>
@@ -120,7 +120,7 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1560</x>
+      <x>1410</x>
       <y>564</y>
       <w>114</w>
       <h>48</h>
@@ -136,7 +136,7 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1224</x>
+      <x>1074</x>
       <y>624</y>
       <w>126</w>
       <h>78</h>
@@ -153,7 +153,7 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1086</x>
+      <x>936</x>
       <y>624</y>
       <w>126</w>
       <h>78</h>
@@ -170,7 +170,7 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>300</x>
+      <x>150</x>
       <y>546</y>
       <w>126</w>
       <h>78</h>
@@ -185,7 +185,7 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>564</x>
+      <x>414</x>
       <y>414</y>
       <w>204</w>
       <h>114</h>
@@ -206,7 +206,7 @@ satte</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>762</x>
+      <x>612</x>
       <y>462</y>
       <w>336</w>
       <h>216</h>
@@ -217,7 +217,7 @@ satte</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>420</x>
+      <x>270</x>
       <y>450</y>
       <w>156</w>
       <h>150</h>
@@ -228,7 +228,7 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>150</x>
+      <x>0</x>
       <y>546</y>
       <w>126</w>
       <h>78</h>
@@ -244,7 +244,7 @@ lbMaterial : Listbox
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>270</x>
+      <x>120</x>
       <y>576</y>
       <w>42</w>
       <h>18</h>
@@ -255,7 +255,7 @@ lbMaterial : Listbox
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1146</x>
+      <x>996</x>
       <y>462</y>
       <w>150</w>
       <h>78</h>
@@ -270,7 +270,7 @@ IRepository
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1284</x>
+      <x>1134</x>
       <y>156</y>
       <w>372</w>
       <h>48</h>
@@ -281,7 +281,7 @@ IRepository
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1380</x>
+      <x>1230</x>
       <y>696</y>
       <w>126</w>
       <h>84</h>
@@ -299,7 +299,7 @@ Width : double
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1476</x>
+      <x>1326</x>
       <y>672</y>
       <w>72</w>
       <h>30</h>
@@ -311,7 +311,7 @@ Type be enums?</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1554</x>
+      <x>1404</x>
       <y>678</y>
       <w>126</w>
       <h>60</h>
@@ -327,7 +327,7 @@ Diameter : double
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1656</x>
+      <x>1506</x>
       <y>654</y>
       <w>84</w>
       <h>36</h>
@@ -339,7 +339,7 @@ be an enum?</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1710</x>
+      <x>1560</x>
       <y>702</y>
       <w>126</w>
       <h>54</h>
@@ -354,7 +354,7 @@ Form : string
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1812</x>
+      <x>1662</x>
       <y>672</y>
       <w>72</w>
       <h>36</h>
@@ -366,7 +366,7 @@ an enum?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1560</x>
+      <x>1410</x>
       <y>636</y>
       <w>222</w>
       <h>78</h>
@@ -378,7 +378,7 @@ an enum?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1440</x>
+      <x>1290</x>
       <y>636</y>
       <w>138</w>
       <h>72</h>
@@ -390,7 +390,7 @@ an enum?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1614</x>
+      <x>1464</x>
       <y>606</y>
       <w>18</w>
       <h>84</h>
@@ -402,7 +402,7 @@ an enum?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1344</x>
+      <x>1194</x>
       <y>576</y>
       <w>228</w>
       <h>102</h>
@@ -414,7 +414,7 @@ an enum?</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1662</x>
+      <x>1512</x>
       <y>606</y>
       <w>78</w>
       <h>36</h>
@@ -427,7 +427,7 @@ classes?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1608</x>
+      <x>1458</x>
       <y>510</y>
       <w>18</w>
       <h>18</h>
@@ -439,7 +439,7 @@ classes?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1614</x>
+      <x>1464</x>
       <y>510</y>
       <w>18</w>
       <h>66</h>
@@ -451,7 +451,7 @@ classes?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>762</x>
+      <x>612</x>
       <y>450</y>
       <w>498</w>
       <h>186</h>
@@ -462,7 +462,7 @@ classes?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1212</x>
+      <x>1062</x>
       <y>534</y>
       <w>90</w>
       <h>102</h>
@@ -474,7 +474,7 @@ classes?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1146</x>
+      <x>996</x>
       <y>564</y>
       <w>84</w>
       <h>72</h>
@@ -486,7 +486,7 @@ classes?</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>546</x>
+      <x>396</x>
       <y>576</y>
       <w>114</w>
       <h>48</h>
@@ -501,7 +501,7 @@ classes?</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>684</x>
+      <x>534</x>
       <y>576</y>
       <w>114</w>
       <h>48</h>
@@ -517,7 +517,7 @@ classes?</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>678</x>
+      <x>528</x>
       <y>690</y>
       <w>126</w>
       <h>60</h>
@@ -533,7 +533,7 @@ Diameter : double
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>834</x>
+      <x>684</x>
       <y>714</y>
       <w>126</w>
       <h>54</h>
@@ -548,7 +548,7 @@ Form : string
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>684</x>
+      <x>534</x>
       <y>648</y>
       <w>222</w>
       <h>78</h>
@@ -560,7 +560,7 @@ Form : string
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>564</x>
+      <x>414</x>
       <y>648</y>
       <w>138</w>
       <h>72</h>
@@ -572,7 +572,7 @@ Form : string
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>738</x>
+      <x>588</x>
       <y>618</y>
       <w>18</w>
       <h>84</h>
@@ -584,7 +584,7 @@ Form : string
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>504</x>
+      <x>354</x>
       <y>708</y>
       <w>126</w>
       <h>84</h>
@@ -602,7 +602,7 @@ Width : double
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>936</x>
+      <x>786</x>
       <y>684</y>
       <w>72</w>
       <h>36</h>
@@ -614,7 +614,7 @@ an enum?</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>780</x>
+      <x>630</x>
       <y>666</y>
       <w>84</w>
       <h>36</h>
@@ -626,7 +626,7 @@ be an enum?</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>786</x>
+      <x>636</x>
       <y>618</y>
       <w>78</w>
       <h>36</h>
@@ -639,7 +639,7 @@ classes?</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>600</x>
+      <x>450</x>
       <y>684</y>
       <w>72</w>
       <h>30</h>
@@ -651,7 +651,7 @@ Type be enums?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>732</x>
+      <x>582</x>
       <y>522</y>
       <w>18</w>
       <h>66</h>
@@ -663,7 +663,7 @@ Type be enums?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>594</x>
+      <x>444</x>
       <y>522</y>
       <w>18</w>
       <h>66</h>
