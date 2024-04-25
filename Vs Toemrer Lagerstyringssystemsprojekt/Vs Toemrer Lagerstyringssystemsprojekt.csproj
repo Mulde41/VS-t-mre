@@ -10,8 +10,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\nailMaterial.jpg" />
+    <None Remove="Images\screwMaterial.jpg" />
+    <None Remove="Images\woodmaterial.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\nailMaterial.jpg" />
+    <Resource Include="Images\screwMaterial.jpg" />
+    <Resource Include="Images\woodMaterial.jpg" />
   </ItemGroup>
 
 </Project>
