@@ -13,5 +13,12 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
         public string Address { get; set; }
         public string ProjectDescription { get; set; }
 
+        public Project (string title, double offer, string address, string projectDescription)
+        {
+            Title = title;
+            Offer = offer;
+            Address = address;
+            ProjectDescription = projectDescription;
+        }
     }
 }
