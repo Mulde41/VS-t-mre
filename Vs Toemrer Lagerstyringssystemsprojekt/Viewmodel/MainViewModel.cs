@@ -3,13 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
-    public class MainViewModel
+    public class MainViewModel : INotifyPropertyChanged
     {
-        private ProjectRepository projectRepo;
+        public event PropertyChangedEventHandler? PropertyChanged;
 
+        private ProjectRepository _projectRepo;
+        public MainViewModel(ProjectRepository projectRepository) // DEPENDENCY INJECTION, add more repositories as more are needed
+        {
+            _projectRepo = projectRepository;
+        }
+
+        public void AddProject(string title, double offer, string address, string projectDescription)
+        {
+            Project project = new Project(title, offer, address, projectDescription);
+            _projectRepo.Add(project);
+        }
     }
 }

@@ -46,7 +46,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 
         }
 
-        public void AddProject(Project project)
+        public void Add(Project project)
         {
             using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
             {
