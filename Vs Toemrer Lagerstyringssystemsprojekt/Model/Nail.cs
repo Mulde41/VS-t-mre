@@ -11,6 +11,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
     {
         public double Length { get; set; }
         public string Form { get; set; }
+        public override string Name { set {} get { return Name; } }
 
         public Nail(double Length, string Form, int Quantity, string Treatment) : base(Quantity, Treatment)
         {
@@ -18,6 +19,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
             this.Form = Form;
             base.Treatment = Treatment;
             base.Quantity = Quantity;
+            Name = $"{Form} {Length}mm {Treatment}";
         }
     }
 }

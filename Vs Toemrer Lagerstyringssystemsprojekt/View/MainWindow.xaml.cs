@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.View;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt
 {
@@ -21,36 +22,19 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt
             InitializeComponent();
         }
 
-        private void btnTree_Click(object sender, RoutedEventArgs e)
+        private void Lager_Click(object sender, RoutedEventArgs e)
         {
-            ClearMainWindow();
-            PopulateItems();
-           
+            MainContent.Content = new StorageView();
         }
 
-        private void ClearMainWindow()
+        private void Projekter_Click(object sender, RoutedEventArgs e)
         {
-            btnTree.Visibility = Visibility.Collapsed;
-            lbTree.Visibility = Visibility.Visible;
-            lbTree.Items.Clear();
+            MainContent.Content = new ProjectsView();
         }
 
-        private void PopulateItems()
+        private void Register_Click(object sender, RoutedEventArgs e)
         {
-            List<string> tree = new List<string>
-            {
-                "tree 1",
-                "tree 2",
-                "tree 3"
-            };
-
-            foreach (string item in tree)
-            {
-                lbTree.Items.Add(item);
-            }
 
         }
-
-        
     }
 }

@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="Vs_Toemrer_Lagerstyringssystemsprojekt.View.ProjectsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Vs_Toemrer_Lagerstyringssystemsprojekt.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="700">
+    <Grid>
+        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        
+        
+        <StackPanel Grid.Column="0">
+            <ListBox x:Name="ProjectsListBox"
+                     Height="500">
+                <ListBoxItem Content="Project 1"/>
+                <ListBoxItem Content="Project 2"/>
+                <ListBoxItem Content="Project 3"/>
+                <ListBoxItem Content="Project 3"/>
+                <ListBoxItem x:Name="ProjectsLb" Content="Project 3"/>
+                <ListBoxItem Content="Project 3"/>
+                <ListBoxItem Content="Project 3"/>
+                <ListBoxItem Content="Project 3"/>
+                <ListBoxItem Content="Project 3"/>
+                <ListBoxItem Content="Project 3"/>
+                <ListBoxItem Content="Project 3"/>
+                <ListBoxItem Content="Project 3"/>
+                <ListBoxItem Content="Project 3"/>
+
+                <!-- Add more items as needed -->
+            </ListBox>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="0,0,0,30">
+            <ListView x:Name="MaterialsListView" Margin="10">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Material Name" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Quantity}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button x:Name="Create_ProjectBtn" Content="Opret Projekt" Width="120" Margin="10,0,100,10"/>
+                <Button x:Name="FInish_ProjectBtn" Content="Færdigør Projekt" Width="120" Margin="10,0,10,10"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+    
+</UserControl>

@@ -12,7 +12,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
     {
 
 
-        private List<Wood> wood_Materials = new List<Wood>();
+        public List<Wood> wood_Materials = new List<Wood>();
 
         public WoodRepository()
         {
@@ -22,7 +22,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 
         private void InitializeRepository()
         {
-            using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
+            using (SqlConnection connection = new SqlConnection("Server=10.56.8.35; Database=P3_DB_2024_07; User Id=P3_PROJECT_USER_2024_07; Password=OPENDB_07; TrustServerCertificate=true"))
             {
                 connection.Open();
 
@@ -36,11 +36,11 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
                         (
                             reader["Sort"].ToString(),
                             reader["Type"].ToString(),
+                            reader["Treatment"].ToString(),
                             Convert.ToDouble(reader["Height"].ToString()),
                             Convert.ToDouble(reader["Length"].ToString()),
                             Convert.ToDouble(reader["Width"].ToString()),
-                            int.Parse(reader["Quantity"].ToString()),
-                            reader["Treatment"].ToString()
+                            int.Parse(reader["Quantity"].ToString())
                         );
                         wood_Materials.Add(wood);
                     }

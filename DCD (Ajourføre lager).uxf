@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>6</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1170</x>
+      <x>1755</x>
       <y>0</y>
-      <w>300</w>
-      <h>150</h>
+      <w>450</w>
+      <h>225</h>
     </coordinates>
     <panel_attributes>Kvalitets kriterier
 Viser alle c# klasser der skal bruges i koden
@@ -28,10 +28,10 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1410</x>
-      <y>438</y>
-      <w>114</w>
-      <h>78</h>
+      <x>2115</x>
+      <y>657</y>
+      <w>171</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>Location
 --
@@ -43,10 +43,10 @@ satte</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>912</x>
-      <y>396</y>
-      <w>18</w>
-      <h>402</h>
+      <x>1368</x>
+      <y>594</y>
+      <w>27</w>
+      <h>603</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;650.0</additional_attributes>
@@ -54,10 +54,10 @@ satte</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1212</x>
-      <y>396</y>
-      <w>18</w>
-      <h>396</h>
+      <x>1818</x>
+      <y>594</y>
+      <w>27</w>
+      <h>594</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;640.0</additional_attributes>
@@ -65,10 +65,10 @@ satte</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>312</x>
-      <y>396</y>
-      <w>18</w>
-      <h>402</h>
+      <x>468</x>
+      <y>594</y>
+      <w>27</w>
+      <h>603</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;650.0</additional_attributes>
@@ -76,10 +76,10 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1416</x>
-      <y>366</y>
-      <w>60</w>
-      <h>18</h>
+      <x>2124</x>
+      <y>369</y>
+      <w>90</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>Model</panel_attributes>
     <additional_attributes/>
@@ -87,10 +87,10 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1044</x>
-      <y>372</y>
-      <w>60</w>
-      <h>18</h>
+      <x>1566</x>
+      <y>558</y>
+      <w>90</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>Persistence</panel_attributes>
     <additional_attributes/>
@@ -98,10 +98,10 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>594</x>
-      <y>378</y>
-      <w>60</w>
-      <h>18</h>
+      <x>891</x>
+      <y>567</y>
+      <w>90</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>Viewmodel</panel_attributes>
     <additional_attributes/>
@@ -109,10 +109,10 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>156</x>
-      <y>384</y>
-      <w>60</w>
-      <h>18</h>
+      <x>234</x>
+      <y>576</y>
+      <w>90</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>View</panel_attributes>
     <additional_attributes/>
@@ -120,10 +120,10 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1410</x>
-      <y>564</y>
-      <w>114</w>
-      <h>48</h>
+      <x>2115</x>
+      <y>846</y>
+      <w>171</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>/Material/
 --
@@ -136,10 +136,10 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1074</x>
-      <y>624</y>
-      <w>126</w>
-      <h>78</h>
+      <x>1611</x>
+      <y>936</y>
+      <w>189</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>MaterialRepository
 --
@@ -153,10 +153,10 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>936</x>
-      <y>624</y>
-      <w>126</w>
-      <h>78</h>
+      <x>1404</x>
+      <y>936</y>
+      <w>189</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>LocationRepository
 --
@@ -170,10 +170,10 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>150</x>
-      <y>546</y>
-      <w>126</w>
-      <h>78</h>
+      <x>225</x>
+      <y>819</y>
+      <w>189</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>MainView : Window
 --
@@ -185,10 +185,10 @@ satte</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>414</x>
-      <y>414</y>
-      <w>204</w>
-      <h>114</h>
+      <x>621</x>
+      <y>621</y>
+      <w>306</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>MainViewModel
 --
@@ -206,10 +206,10 @@ satte</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>612</x>
-      <y>462</y>
-      <w>336</w>
-      <h>216</h>
+      <x>918</x>
+      <y>693</y>
+      <w>504</w>
+      <h>324</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>10.0;10.0;470.0;10.0;470.0;340.0;540.0;340.0</additional_attributes>
@@ -217,10 +217,10 @@ satte</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>270</x>
-      <y>450</y>
-      <w>156</w>
-      <h>150</h>
+      <x>405</x>
+      <y>675</y>
+      <w>234</w>
+      <h>225</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>240.0;10.0;110.0;10.0;110.0;230.0;10.0;230.0</additional_attributes>
@@ -229,9 +229,9 @@ satte</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>546</y>
-      <w>126</w>
-      <h>78</h>
+      <y>819</y>
+      <w>189</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>MainView
 --
@@ -244,10 +244,10 @@ lbMaterial : Listbox
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>120</x>
-      <y>576</y>
-      <w>42</w>
-      <h>18</h>
+      <x>180</x>
+      <y>864</y>
+      <w>63</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -255,10 +255,10 @@ lbMaterial : Listbox
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>996</x>
-      <y>462</y>
-      <w>150</w>
-      <h>78</h>
+      <x>1494</x>
+      <y>693</y>
+      <w>225</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 IRepository
@@ -270,10 +270,10 @@ IRepository
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1134</x>
-      <y>156</y>
-      <w>372</w>
-      <h>48</h>
+      <x>1701</x>
+      <y>234</y>
+      <w>558</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>Få afklaret med lære</panel_attributes>
     <additional_attributes/>
@@ -281,10 +281,10 @@ IRepository
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1230</x>
-      <y>696</y>
-      <w>126</w>
-      <h>84</h>
+      <x>1845</x>
+      <y>1044</y>
+      <w>189</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>Wood
 --
@@ -297,24 +297,12 @@ Width : double
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>1326</x>
-      <y>672</y>
-      <w>72</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Should Sort and
-Type be enums?</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1404</x>
-      <y>678</y>
-      <w>126</w>
-      <h>60</h>
+      <x>2106</x>
+      <y>1017</y>
+      <w>189</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>Screw
 --
@@ -325,24 +313,12 @@ Diameter : double
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>1506</x>
-      <y>654</y>
-      <w>84</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Should ScrewHead
-be an enum?</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1560</x>
-      <y>702</y>
-      <w>126</w>
-      <h>54</h>
+      <x>2340</x>
+      <y>1053</y>
+      <w>189</w>
+      <h>81</h>
     </coordinates>
     <panel_attributes>Nail
 --
@@ -352,24 +328,12 @@ Form : string
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>1662</x>
-      <y>672</y>
-      <w>72</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Should Form be
-an enum?</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>1410</x>
-      <y>636</y>
-      <w>222</w>
-      <h>78</h>
+      <x>2115</x>
+      <y>954</y>
+      <w>333</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
@@ -378,10 +342,10 @@ an enum?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1290</x>
-      <y>636</y>
-      <w>138</w>
-      <h>72</h>
+      <x>1935</x>
+      <y>954</y>
+      <w>207</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
@@ -390,10 +354,10 @@ an enum?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1464</x>
-      <y>606</y>
-      <w>18</w>
-      <h>84</h>
+      <x>2196</x>
+      <y>909</y>
+      <w>27</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 </panel_attributes>
@@ -402,35 +366,22 @@ an enum?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1194</x>
-      <y>576</y>
-      <w>228</w>
-      <h>102</h>
+      <x>1791</x>
+      <y>864</y>
+      <w>342</w>
+      <h>153</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
     <additional_attributes>10.0;150.0;110.0;150.0;110.0;20.0;360.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>1512</x>
-      <y>606</y>
-      <w>78</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Are we going to
-need more devried
-classes?</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>1458</x>
-      <y>510</y>
-      <w>18</w>
-      <h>18</h>
+      <x>2187</x>
+      <y>765</y>
+      <w>27</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
@@ -439,10 +390,10 @@ classes?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1464</x>
-      <y>510</y>
-      <w>18</w>
-      <h>66</h>
+      <x>2196</x>
+      <y>765</y>
+      <w>27</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
@@ -451,10 +402,10 @@ classes?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>612</x>
-      <y>450</y>
-      <w>498</w>
-      <h>186</h>
+      <x>918</x>
+      <y>675</y>
+      <w>747</w>
+      <h>279</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>10.0;10.0;490.0;10.0;490.0;260.0;810.0;260.0;810.0;290.0</additional_attributes>
@@ -462,10 +413,10 @@ classes?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1062</x>
-      <y>534</y>
-      <w>90</w>
-      <h>102</h>
+      <x>1593</x>
+      <y>801</y>
+      <w>135</w>
+      <h>153</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.
 </panel_attributes>
@@ -474,10 +425,10 @@ classes?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>996</x>
-      <y>564</y>
-      <w>84</w>
-      <h>72</h>
+      <x>1494</x>
+      <y>846</y>
+      <w>126</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=.
 </panel_attributes>
@@ -486,10 +437,10 @@ classes?</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>396</x>
-      <y>576</y>
-      <w>114</w>
-      <h>48</h>
+      <x>594</x>
+      <y>864</y>
+      <w>171</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>LocationViewModel
 --
@@ -501,10 +452,10 @@ classes?</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>534</x>
-      <y>576</y>
-      <w>114</w>
-      <h>48</h>
+      <x>801</x>
+      <y>864</y>
+      <w>171</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>/MaterialViewModel/
 --
@@ -517,10 +468,10 @@ classes?</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>528</x>
-      <y>690</y>
-      <w>126</w>
-      <h>60</h>
+      <x>792</x>
+      <y>1035</y>
+      <w>189</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>ScrewViewModel
 --
@@ -533,10 +484,10 @@ Diameter : double
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>684</x>
-      <y>714</y>
-      <w>126</w>
-      <h>54</h>
+      <x>1026</x>
+      <y>1071</y>
+      <w>189</w>
+      <h>81</h>
     </coordinates>
     <panel_attributes>NailViewModel
 --
@@ -548,10 +499,10 @@ Form : string
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>534</x>
-      <y>648</y>
-      <w>222</w>
-      <h>78</h>
+      <x>801</x>
+      <y>972</y>
+      <w>333</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
@@ -560,10 +511,10 @@ Form : string
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>414</x>
-      <y>648</y>
-      <w>138</w>
-      <h>72</h>
+      <x>621</x>
+      <y>972</y>
+      <w>207</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
@@ -572,10 +523,10 @@ Form : string
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
-      <y>618</y>
-      <w>18</w>
-      <h>84</h>
+      <x>882</x>
+      <y>927</y>
+      <w>27</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 </panel_attributes>
@@ -584,10 +535,10 @@ Form : string
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>354</x>
-      <y>708</y>
-      <w>126</w>
-      <h>84</h>
+      <x>531</x>
+      <y>1062</y>
+      <w>189</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>WoodViewModel
 --
@@ -602,47 +553,10 @@ Width : double
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>786</x>
-      <y>684</y>
-      <w>72</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Should Form be
-an enum?</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>630</x>
-      <y>666</y>
-      <w>84</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Should ScrewHead
-be an enum?</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>636</x>
-      <y>618</y>
-      <w>78</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Are we going to
-need more devried
-classes?</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>450</x>
-      <y>684</y>
-      <w>72</w>
-      <h>30</h>
+      <x>675</x>
+      <y>1026</y>
+      <w>108</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>Should Sort and
 Type be enums?</panel_attributes>
@@ -651,10 +565,10 @@ Type be enums?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>582</x>
-      <y>522</y>
-      <w>18</w>
-      <h>66</h>
+      <x>873</x>
+      <y>783</y>
+      <w>27</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
@@ -663,13 +577,28 @@ Type be enums?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>444</x>
-      <y>522</y>
-      <w>18</w>
-      <h>66</h>
+      <x>666</x>
+      <y>783</y>
+      <w>27</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2115</x>
+      <y>495</y>
+      <w>171</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>Location
+--
++ Position : string
+--
++ Location(Position : string)</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
