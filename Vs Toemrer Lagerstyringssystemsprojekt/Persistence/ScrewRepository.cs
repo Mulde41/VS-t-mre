@@ -37,6 +37,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
                             Convert.ToDouble(reader["Diameter"].ToString()),
                             int.Parse(reader["Quantity"].ToString()),
                             reader["Treatment"].ToString()
+                            
                         );
                         Screw_Materials.Add(screw);
                     }

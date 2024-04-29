@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
-    internal class MaterialViewModel
+    internal class MainViewModel
     {
     }
 }

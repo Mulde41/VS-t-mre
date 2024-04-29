@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>10</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>10</y>
-      <w>860</w>
-      <h>680</h>
+      <x>16</x>
+      <y>16</y>
+      <w>688</w>
+      <h>544</h>
     </coordinates>
     <panel_attributes>KvalitetsKritterier
 
@@ -56,10 +56,10 @@ Hvis vi har lyst til engelsk i navngivning af operation, skal det nævnes i et g
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>890</x>
-      <y>10</y>
-      <w>440</w>
-      <h>180</h>
+      <x>728</x>
+      <y>16</y>
+      <w>352</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>halign=left
 Brief (Main sucess scenario)
