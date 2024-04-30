@@ -45,6 +45,10 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         };
             ProjectsListBox.ItemsSource = projects;
         }
-        
+
+        private void btnCreateProject_Click(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new ProjectMakerView();
+        }
     }
 }

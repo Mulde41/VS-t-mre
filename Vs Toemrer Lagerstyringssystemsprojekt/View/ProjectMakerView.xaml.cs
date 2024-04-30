@@ -25,6 +25,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             InitializeComponent();
         }
 
+
         private void txbTitle_GotFocus(object sender, RoutedEventArgs e)
         {
             var textBox = sender as TextBox;
@@ -63,6 +64,51 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
                 textBox.Text = ""; // Clear the placeholder text
                 textBox.TextAlignment = TextAlignment.Left; // Change text alignment to left
             }
+        }
+
+        private void txbTitle_LostFocus(object sender, RoutedEventArgs e)
+        {
+            var textBox = sender as TextBox;
+            if (textBox.Text == "")
+            {
+                textBox.Text = "Titel"; // Clear the placeholder text
+                textBox.TextAlignment = TextAlignment.Center; // Change text alignment to left
+            }
+        }
+
+        private void txbOffer_LostFocus(object sender, RoutedEventArgs e)
+        {
+            var textBox = sender as TextBox;
+            if (textBox.Text == "")
+            {
+                textBox.Text = "Tilbud"; // Clear the placeholder text
+                textBox.TextAlignment = TextAlignment.Center; // Change text alignment to left
+            }
+        }
+
+        private void txbAddress_LostFocus(object sender, RoutedEventArgs e)
+        {
+            var textBox = sender as TextBox;
+            if (textBox.Text == "")
+            {
+                textBox.Text = "Adresse"; // Clear the placeholder text
+                textBox.TextAlignment = TextAlignment.Center; // Change text alignment to left
+            }
+        }
+
+        private void txbDescription_LostFocus(object sender, RoutedEventArgs e)
+        {
+            var textBox = sender as TextBox;
+            if (textBox.Text == "")
+            {
+                textBox.Text = "Projectbeskrivelse"; // Clear the placeholder text
+                textBox.TextAlignment = TextAlignment.Center; // Change text alignment to left
+            }
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            ProjectsView.MainContent.Content = new ProjectsView();
         }
     }
 }
