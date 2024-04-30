@@ -22,13 +22,13 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     /// </summary>
     public partial class ProjectsView : UserControl
     {
-        WoodRepository wr = new WoodRepository();
+        //WoodRepository wr = new WoodRepository();
         public ProjectsView()
         {
             InitializeComponent();
-            LoadMaterials();
+            LoadLists();
         }
-        private void LoadMaterials()
+        private void LoadLists()
         {
             //    var materials = new List<Material>
             //{
@@ -37,7 +37,14 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             //    new Wood ("Fyrretræ", "Reglar", "Olieret", 20.0, 230.0, 25.0, 50),
             //};
 
-            MaterialsListView.ItemsSource = wr.wood_Materials;
+        List<Project> projects = new List<Project> 
+        { 
+            new Project("Føtex tag", 5000.0, "Vestergade 12","der skal laves et tag på den nye føtex bygning på vestergade 12"),
+            new Project("City Park Renovation", 20000.0, "Main Street Park", "This project involves a full renovation of Main Street Park, including landscaping, playground installation, and park facilities upgrades."),
+            new Project("Library Expansion", 15000.0, "Central Library, Elm Street", "The Central Library is expanding with a new wing to house additional collections, reading rooms, and a community space.")
+        };
+            ProjectsListBox.ItemsSource = projects;
         }
+        
     }
 }

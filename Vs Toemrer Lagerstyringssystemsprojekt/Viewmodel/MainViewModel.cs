@@ -13,16 +13,16 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        private ProjectRepository _projectRepo;
+        private ProjectRepository projectRepo;
         public MainViewModel(ProjectRepository projectRepository) // DEPENDENCY INJECTION, add more repositories as more are needed
         {
-            _projectRepo = projectRepository;
+            projectRepo = projectRepository;
         }
 
         public void AddProject(string title, double offer, string address, string projectDescription)
         {
             Project project = new Project(title, offer, address, projectDescription);
-            _projectRepo.Add(project);
+            projectRepo.Add(project);
         }
     }
 }
