@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Vs_Toemrer_Lagerstyringssystemsprojekt.View.ProjectMakerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Vs_Toemrer_Lagerstyringssystemsprojekt.View"
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="700">
+    <Grid>
+        <TextBox x:Name="txbTitle"
+                 HorizontalAlignment="Left"
+                 Margin="190,92,0,0"
+                 TextWrapping="Wrap"
+                 Text="Titel"
+                 VerticalAlignment="Top"
+                 Width="220"
+                 TextChanged="TextBox_TextChanged"
+                 TextAlignment="Center"
+                 GotFocus="txbTitle_GotFocus" />
+        <TextBox x:Name="txbOffer"
+                 HorizontalAlignment="Left"
+                 Margin="190,174,0,0"
+                 TextWrapping="Wrap"
+                 Text="Tilbud"
+                 VerticalAlignment="Top"
+                 Width="220"
+                 TextAlignment="Center"
+                 GotFocus="txbOffer_GotFocus" />
+        <TextBox x:Name="txbAddress"
+                 HorizontalAlignment="Left"
+                 Margin="190,255,0,0"
+                 TextWrapping="Wrap"
+                 Text="Adresse"
+                 VerticalAlignment="Top"
+                 Width="220"
+                 TextAlignment="Center"
+                 GotFocus="txbAddress_GotFocus" />
+
+        <TextBox x:Name="txbDescription"
+                 HorizontalAlignment="Left"
+                 Margin="465,92,0,0"
+                 TextWrapping="Wrap"
+                 Text="Projektbeskrivelse"
+                 VerticalAlignment="Top"
+                 Width="185"
+                 Height="181"
+                 TextAlignment="Center"
+                 GotFocus="txbDescription_GotFocus" />
+        <Button x:Name="btnSaveProject"
+                Content="Gem Projekt"
+                HorizontalAlignment="Left"
+                Margin="350,330,0,0"
+                VerticalAlignment="Top"
+                Height="35"
+                Width="130" />
+        <Button Content="Annuller"
+                HorizontalAlignment="Left"
+                Margin="590,395,0,0"
+                VerticalAlignment="Top" />
+
+    </Grid>
+</UserControl>
