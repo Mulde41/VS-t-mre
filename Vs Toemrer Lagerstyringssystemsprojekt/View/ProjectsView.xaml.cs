@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 {
