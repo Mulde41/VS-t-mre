@@ -96,19 +96,21 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             }
         }
 
+        
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Collapsed;
+        }
+
         private void txbDescription_LostFocus(object sender, RoutedEventArgs e)
         {
             var textBox = sender as TextBox;
             if (textBox.Text == "")
             {
-                textBox.Text = "Projectbeskrivelse"; // Clear the placeholder text
+                textBox.Text = "Projektbeskrivelse"; // Clear the placeholder text
                 textBox.TextAlignment = TextAlignment.Center; // Change text alignment to left
             }
-        }
-
-        private void btnCancel_Click(object sender, RoutedEventArgs e)
-        {
-            ProjectsView.MainContent.Content = new ProjectsView();
         }
     }
 }
