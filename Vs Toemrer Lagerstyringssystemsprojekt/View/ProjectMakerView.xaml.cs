@@ -108,7 +108,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-            ProjectsView.MainContent.Content = new ProjectsView();
+            this.Visibility = Visibility.Collapsed;
         }
     }
 }

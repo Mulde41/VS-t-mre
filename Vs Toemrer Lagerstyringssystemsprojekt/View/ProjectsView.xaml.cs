@@ -27,6 +27,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         public ProjectsView()
         {
             InitializeComponent();
+            DataContext = new { Projects= ProjectsListBox };
             LoadLists();
         }
         private void LoadLists()

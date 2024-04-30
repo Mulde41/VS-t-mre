@@ -9,18 +9,28 @@
 
     <DockPanel>
         <StackPanel Orientation="Horizontal"  DockPanel.Dock="Bottom" Background="LightGray">
-            
+
             <Button x:Name="btnCreateProject"
                     Margin="325,0,0,0" Content="Opret projekt" Height="40" Width="75"
                     Click="btnCreateProject_Click" />
             <Button Margin="0,0,0,0" Content="Slet projekt" Height="40" Width="75" />
-            
+
         </StackPanel>
 
         <ListBox x:Name="ProjectsListBox" DockPanel.Dock="Left" Width="100" Background="LightGray" DisplayMemberPath="Title">
         </ListBox>
 
-        <ContentControl x:Name="MainContent" />
+        <ContentControl x:Name="MainContent" >
+            <StackPanel>
+
+                <StackPanel>
+                    <Label Content="{Binding SelectedItem.Title, ElementName=ProjectsListBox}" FontSize="16" FontWeight="Bold" />
+                    <Label Content="{Binding SelectedItem.Price, ElementName=ProjectsListBox}" />
+                    <Label Content="{Binding SelectedItem.Address, ElementName=ProjectsListBox}" />
+                    <Label Content="{Binding SelectedItem.Description, ElementName=ProjectsListBox}" />
+                </StackPanel>
+            </StackPanel>
+        </ContentControl>
 
 
     </DockPanel>
