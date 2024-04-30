@@ -43,7 +43,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             new Project("City Park Renovation", 20000.0, "Main Street Park", "This project involves a full renovation of Main Street Park, including landscaping, playground installation, and park facilities upgrades."),
             new Project("Library Expansion", 15000.0, "Central Library, Elm Street", "The Central Library is expanding with a new wing to house additional collections, reading rooms, and a community space.")
         };
-            ProjectsListBox.ItemsSource = projects.
+            ProjectsListBox.ItemsSource = projects;
         }
         
     }
