@@ -10,7 +10,7 @@
     <Grid>
         <TextBox x:Name="txbTitle"
                  HorizontalAlignment="Left"
-                 Margin="85,57,0,0"
+                 Margin="75,69,0,0"
                  TextWrapping="Wrap"
                  Text="Titel"
                  VerticalAlignment="Top"
@@ -20,7 +20,7 @@
                  LostFocus="txbTitle_LostFocus" />
         <TextBox x:Name="txbOffer"
                  HorizontalAlignment="Left"
-                 Margin="85,139,0,0"
+                 Margin="75,151,0,0"
                  TextWrapping="Wrap"
                  Text="Tilbud"
                  VerticalAlignment="Top"
@@ -30,7 +30,7 @@
                  LostFocus="txbOffer_LostFocus" />
         <TextBox x:Name="txbAddress"
                  HorizontalAlignment="Left"
-                 Margin="85,220,0,0"
+                 Margin="75,232,0,0"
                  TextWrapping="Wrap"
                  Text="Adresse"
                  VerticalAlignment="Top"
@@ -41,7 +41,7 @@
 
         <TextBox x:Name="txbDescription"
                  HorizontalAlignment="Left"
-                 Margin="360,57,0,0"
+                 Margin="350,69,0,0"
                  TextWrapping="Wrap"
                  Text="Projektbeskrivelse"
                  VerticalAlignment="Top"
@@ -52,17 +52,26 @@
                  LostFocus="txbDescription_LostFocus" />
         <Button x:Name="btnSaveProject"
                 Content="Gem Projekt"
-                HorizontalAlignment="Left"
-                Margin="245,295,0,0"
+                HorizontalAlignment="Center"
+                Margin="0,307,0,0"
                 VerticalAlignment="Top"
                 Height="35"
-                Width="130" Click="btnSaveProject_Click" />
+                Width="130"
+                Click="btnSaveProject_Click" />
         <Button x:Name="btnCancel"
                 Content="Annuller"
                 HorizontalAlignment="Left"
                 Margin="485,360,0,0"
                 VerticalAlignment="Top"
                 Click="btnCancel_Click" />
+        <Label x:Name="lblCreateProject"
+               Content=""
+               HorizontalAlignment="Center"
+               Margin="0,342,0,0"
+               VerticalAlignment="Top"
+               Width="198" 
+               HorizontalContentAlignment="Center"
+               FontSize="15"/>
 
     </Grid>
 </UserControl>

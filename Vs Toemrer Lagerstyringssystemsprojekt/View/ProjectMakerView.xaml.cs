@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
@@ -21,14 +9,15 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     /// </summary>
     public partial class ProjectMakerView : UserControl
     {
+
         private MainViewModel mvm;
         public ProjectMakerView()
         {
             mvm = new MainViewModel();
             this.DataContext = mvm;
             InitializeComponent();
-        }
 
+        }
 
         private void txbTitle_GotFocus(object sender, RoutedEventArgs e)
         {
@@ -97,6 +86,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             {
                 textBox.Text = "Adresse"; // Clear the placeholder text
                 textBox.TextAlignment = TextAlignment.Center; // Change text alignment to left
+                
             }
         }
 
@@ -121,6 +111,31 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         {
             double offer = double.Parse(txbOffer.Text);
             mvm.CreateProject(txbTitle.Text, offer, txbAddress.Text, txbDescription.Text);
+
+            txbTitle.Text = "Titel"; // Clear the placeholder text
+            txbTitle.TextAlignment = TextAlignment.Center; // Change text alignment to left
+
+            txbAddress.Text = "Adresse"; // Clear the placeholder text
+            txbAddress.TextAlignment = TextAlignment.Center; // Change text alignment to left
+
+            txbOffer.Text = "Tilbud"; // Clear the placeholder text
+            txbOffer.TextAlignment = TextAlignment.Center; // Change text alignment to left
+
+            txbDescription.Text = "Projektbeskrivelse"; // Clear the placeholder text
+            txbDescription.TextAlignment = TextAlignment.Center; // Change text alignment to lef
+
+            Thread workThread = new Thread(CreationConfirmation);
+            workThread.Start();
+
+        }
+
+        public void CreationConfirmation()
+        {
+            //Change the label content and start the timer
+            lblCreateProject.Dispatcher.Invoke(new Action(() => { lblCreateProject.Content = "Projektet er gemt!"; }));
+            Thread.Sleep(3000);
+            // Change the label back to the original content and stop the timer
+            lblCreateProject.Dispatcher.Invoke(new Action(() => { lblCreateProject.Content = ""; }));
         }
     }
 }
