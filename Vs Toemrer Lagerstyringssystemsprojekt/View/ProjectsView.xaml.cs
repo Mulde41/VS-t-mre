@@ -23,11 +23,12 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     /// </summary>
     public partial class ProjectsView : UserControl
     {
+        private MainViewModel mvm;
         //WoodRepository wr = new WoodRepository();
         public ProjectsView()
         {
             InitializeComponent();
-            DataContext = new { Projects = ProjectsListBox };
+            DataContext = mvm;
             LoadLists();
         }
         private void LoadLists()

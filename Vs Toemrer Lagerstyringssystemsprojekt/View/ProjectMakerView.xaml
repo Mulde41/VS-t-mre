@@ -56,7 +56,7 @@
                 Margin="245,295,0,0"
                 VerticalAlignment="Top"
                 Height="35"
-                Width="130" />
+                Width="130" Click="btnSaveProject_Click" />
         <Button x:Name="btnCancel"
                 Content="Annuller"
                 HorizontalAlignment="Left"

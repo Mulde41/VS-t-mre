@@ -17,7 +17,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
             InitializeRepository();
         }
 
-
         private void InitializeRepository()
         {
             using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
@@ -42,6 +41,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
                 }
             }
         }
+
         public Nail Get(string t)
         {
             throw new NotImplementedException();

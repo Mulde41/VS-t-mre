@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 {
@@ -20,8 +21,11 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     /// </summary>
     public partial class ProjectMakerView : UserControl
     {
+        private MainViewModel mvm;
         public ProjectMakerView()
         {
+            mvm = new MainViewModel();
+            this.DataContext = mvm;
             InitializeComponent();
         }
 
@@ -96,19 +100,27 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             }
         }
 
+        
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Collapsed;
+        }
+
         private void txbDescription_LostFocus(object sender, RoutedEventArgs e)
         {
             var textBox = sender as TextBox;
             if (textBox.Text == "")
             {
-                textBox.Text = "Projectbeskrivelse"; // Clear the placeholder text
+                textBox.Text = "Projektbeskrivelse"; // Clear the placeholder text
                 textBox.TextAlignment = TextAlignment.Center; // Change text alignment to left
             }
         }
 
-        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        private void btnSaveProject_Click(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Collapsed;
+            double offer = double.Parse(txbOffer.Text);
+            mvm.CreateProject(txbTitle.Text, offer, txbAddress.Text, txbDescription.Text);
         }
     }
 }

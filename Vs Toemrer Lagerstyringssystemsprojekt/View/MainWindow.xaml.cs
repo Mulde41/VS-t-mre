@@ -8,7 +8,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.View;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt
 {
@@ -17,6 +19,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();

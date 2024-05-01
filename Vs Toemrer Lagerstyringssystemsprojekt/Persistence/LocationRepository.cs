@@ -14,7 +14,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 {
     public class LocationRepository : IRepository<Location>
     {
-        private List<Location> _locations = new List<Location>();
+        private List<Location> locations = new List<Location>();
         
         public LocationRepository()
         {
@@ -35,23 +35,25 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 
                         Location location = new Location(position);
 
-                        _locations.Add(location);
+                        locations.Add(location);
                     }
                 }
             }
         }
+
         public Location Get(string position)
         {
-            foreach (Location loc in _locations)
+            foreach (Location location in locations)
             {
-                if (loc.Position == position)
-                    return loc;
+                if (location.Position == position)
+                    return location;
             }
             throw new ArgumentException("Location not found.");
         }
+
         public List<Location> GetAll()
         {
-            return _locations.ToList();
+            return locations.ToList();
         }
     }
 }
