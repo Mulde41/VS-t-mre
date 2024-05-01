@@ -13,7 +13,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         private MainViewModel mvm;
         public ProjectMakerView()
         {
-            mvm = new MainViewModel();
+            InitializeComponent();
             this.DataContext = mvm;
             InitializeComponent();
 

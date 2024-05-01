@@ -25,5 +25,9 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
             Project project = new Project(title, offer, address, projectDescription);
             projectRepo.Add(project);
         }
+        public List<Project> GetAll()
+        {
+            return projectRepo.GetAll();
+        }
     }
 }
