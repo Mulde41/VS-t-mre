@@ -21,12 +21,11 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     /// </summary>
     public partial class ProjectMakerView : UserControl
     {
-        private MainViewModel mvm;
+        private MainViewModel mvm = new MainViewModel();
         public ProjectMakerView()
         {
-            mvm = new MainViewModel();
-            this.DataContext = mvm;
             InitializeComponent();
+            this.DataContext = mvm;
         }
 
 

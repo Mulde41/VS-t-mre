@@ -23,7 +23,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     /// </summary>
     public partial class ProjectsView : UserControl
     {
-        private MainViewModel mvm;
+        private MainViewModel mvm = new MainViewModel();
         //WoodRepository wr = new WoodRepository();
         public ProjectsView()
         {
@@ -34,13 +34,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         private void LoadLists()
         {
 
-            List<Project> projects = new List<Project>
-        {
-            new Project("Føtex tag", 5000.0, "Vestergade 12","der skal laves et tag på den nye føtex bygning på vestergade 12"),
-            new Project("City Park Renovation", 20000.0, "Main Street Park", "This project involves a full renovation of Main Street Park, including landscaping, playground installation, and park facilities upgrades."),
-            new Project("Library Expansion", 15000.0, "Central Library, Elm Street", "The Central Library is expanding with a new wing to house additional collections, reading rooms, and a community space.")
-        };
-            ProjectsListBox.ItemsSource = projects;
+            ProjectsListBox.ItemsSource = mvm.GetAll();
+
         }
 
         private void btnCreateProject_Click(object sender, RoutedEventArgs e)
