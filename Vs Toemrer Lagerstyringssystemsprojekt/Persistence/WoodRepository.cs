@@ -22,7 +22,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 
         private void InitializeRepository()
         {
-            using (SqlConnection connection = new SqlConnection("Server=10.56.8.35; Database=P3_DB_2024_07; User Id=P3_PROJECT_USER_2024_07; Password=OPENDB_07; TrustServerCertificate=true"))
+            using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand("SELECT Sort, Type, Height, Length, Width, Quantity, Treatment FROM WOOD_MATERIAL", connection);
