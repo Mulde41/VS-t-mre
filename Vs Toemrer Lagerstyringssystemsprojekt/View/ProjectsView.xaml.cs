@@ -27,8 +27,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         //WoodRepository wr = new WoodRepository();
         public ProjectsView()
         {
-            InitializeComponent();
             DataContext = mvm;
+            InitializeComponent();
             LoadLists();
         }
         private void LoadLists()
@@ -37,10 +37,15 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             ProjectsListBox.ItemsSource = mvm.GetAll();
 
         }
+        private void ProjectsListBoxFocus(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = null;
+        }
 
         private void btnCreateProject_Click(object sender, RoutedEventArgs e)
         {
             MainContent.Content = new ProjectMakerView();
         }
+        
     }
 }
