@@ -14,7 +14,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 
         public ProjectMakerView()
         {
-            InitializeComponent();
             this.DataContext = mvm;
             this.Loaded += (s, e) => update();
 

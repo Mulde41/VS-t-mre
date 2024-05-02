@@ -17,7 +17,7 @@
 
         </StackPanel>
 
-        <ListBox x:Name="ProjectsListBox" DockPanel.Dock="Left" Width="100" Background="LightGray" DisplayMemberPath="Title">
+        <ListBox x:Name="ProjectsListBox" DockPanel.Dock="Left" Width="100" Background="LightGray" DisplayMemberPath="Title" GotFocus="ProjectsListBoxFocus">
         </ListBox>
 
         <ContentControl x:Name="MainContent" >
