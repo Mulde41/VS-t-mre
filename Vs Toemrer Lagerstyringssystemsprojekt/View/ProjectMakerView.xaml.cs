@@ -29,7 +29,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
                 if (btnSaveProject != null)
                     btnSaveProject.IsEnabled = false;
             }
-            if (txbAddress != null && (txbAddress.Text == "" || txbAddress.Text == "Adresse"))
+            else if (txbAddress != null && (txbAddress.Text == "" || txbAddress.Text == "Adresse"))
             {
                 if (btnSaveProject != null)
                     btnSaveProject.IsEnabled = false;
