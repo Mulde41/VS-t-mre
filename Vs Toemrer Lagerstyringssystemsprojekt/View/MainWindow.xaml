@@ -17,6 +17,6 @@
             <Button x:Name="Lager" Content="Lager" Click="Lager_Click" Height="50"/>
             <Button x:Name="Register" Content="Register" Click="Register_Click" Height="50"/>
         </StackPanel>
-        <ContentControl x:Name="MainContent" />
+        <ContentControl x:Name="MainContent"/>
     </DockPanel>
 </Window>
