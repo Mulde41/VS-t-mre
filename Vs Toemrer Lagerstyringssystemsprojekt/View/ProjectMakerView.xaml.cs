@@ -10,7 +10,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     public partial class ProjectMakerView : UserControl
     {
 
-        private MainViewModel mvm;
+        private MainViewModel mvm = new MainViewModel();
+       
         public ProjectMakerView()
         {
             InitializeComponent();
