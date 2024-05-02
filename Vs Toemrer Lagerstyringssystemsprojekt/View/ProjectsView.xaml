@@ -24,6 +24,7 @@
             <StackPanel>
 
                 <StackPanel>
+                    
                     <Label Content="{Binding SelectedItem.Title, ElementName=ProjectsListBox}" FontSize="16" FontWeight="Bold" />
                     <Label Content="{Binding SelectedItem.Price, ElementName=ProjectsListBox}" />
                     <Label Content="{Binding SelectedItem.Address, ElementName=ProjectsListBox}" />

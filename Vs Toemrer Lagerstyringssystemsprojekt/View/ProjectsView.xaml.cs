@@ -24,7 +24,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     public partial class ProjectsView : UserControl
     {
         private MainViewModel mvm = new MainViewModel();
-        //WoodRepository wr = new WoodRepository();
+
+        ProjectMakerView mainContent = new ProjectMakerView();
         public ProjectsView()
         {
             DataContext = mvm;
@@ -44,7 +45,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 
         private void btnCreateProject_Click(object sender, RoutedEventArgs e)
         {
-            MainContent.Content = new ProjectMakerView();
+            MainContent.Content = mainContent;
         }
         
     }
