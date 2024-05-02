@@ -25,7 +25,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     {
         private MainViewModel mvm = new MainViewModel();
 
-        ProjectMakerView mainContent = new ProjectMakerView();
         public ProjectsView()
         {
             DataContext = mvm;
@@ -40,11 +39,11 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         }
         private void ProjectsListBoxFocus(object sender, RoutedEventArgs e)
         {
-            MainContent.Content = null;
         }
 
         private void btnCreateProject_Click(object sender, RoutedEventArgs e)
         {
+            ProjectMakerView mainContent = new ProjectMakerView();
             MainContent.Content = mainContent;
         }
         
