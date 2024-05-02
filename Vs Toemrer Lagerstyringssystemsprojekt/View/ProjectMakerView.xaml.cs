@@ -17,11 +17,11 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             InitializeComponent();
             this.DataContext = mvm;
 
-            update();
+            Update();
 
         }
 
-        public void update()
+        public void Update()
         {
             // Check if controls are not null before accessing their properties
             if (txbTitle != null && (txbTitle.Text == "" || txbTitle.Text == "Titel"))
@@ -168,24 +168,24 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 
         private void txbAddress_TextChanged(object sender, TextChangedEventArgs e)
         {
-            update();
+            Update();
         }
 
         private void txbTitle_TextChanged(object sender, TextChangedEventArgs e)
         {
-            update();
+            Update();
         }
 
 
 
         private void txbOffer_TextChanged(object sender, TextChangedEventArgs e)
         {
-            update();
+            Update();
         }
 
         private void txbDescription_TextChanged(object sender, TextChangedEventArgs e)
         {
-            update();
+            Update();
         }
     }
 }
