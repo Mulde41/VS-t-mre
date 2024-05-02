@@ -16,31 +16,37 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         {
             InitializeComponent();
             this.DataContext = mvm;
-            InitializeComponent();
+            this.Loaded += (s, e) => update();
 
-            update();
+            btnSaveProject.IsEnabled = false;
 
         }
-       
+
         public void update()
         {
-            if (txbTitle.Text == "" || txbTitle.Text == "Titel")
+            // Check if controls are not null before accessing their properties
+            if (txbTitle != null && (txbTitle.Text == "" || txbTitle.Text == "Titel"))
             {
-                btnSaveProject.IsEnabled = false;
+                if (btnSaveProject != null)
+                    btnSaveProject.IsEnabled = false;
             }
-            if (txbAddress.Text == "" || txbAddress.Text == "Adresse")
+            if (txbAddress != null && (txbAddress.Text == "" || txbAddress.Text == "Adresse"))
             {
-                btnSaveProject.IsEnabled = false;
+                if (btnSaveProject != null)
+                    btnSaveProject.IsEnabled = false;
             }
-            else if (txbOffer.Text == "" || txbOffer.Text == "Tilbud")
+            else if (txbOffer != null && (txbOffer.Text == "" || txbOffer.Text == "Tilbud"))
             {
-                btnSaveProject.IsEnabled = false;
+                if (btnSaveProject != null)
+                    btnSaveProject.IsEnabled = false;
             }
             else
             {
-                btnSaveProject.IsEnabled = true;
+                if (btnSaveProject != null)
+                    btnSaveProject.IsEnabled = true;
             }
         }
+
 
 
         private void txbTitle_GotFocus(object sender, RoutedEventArgs e)
@@ -91,7 +97,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
                 textBox.Text = "Titel"; // Clear the placeholder text
                 textBox.TextAlignment = TextAlignment.Center; // Change text alignment to left
             }
-            update();
         }
 
         private void txbOffer_LostFocus(object sender, RoutedEventArgs e)
@@ -102,7 +107,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
                 textBox.Text = "Tilbud"; // Clear the placeholder text
                 textBox.TextAlignment = TextAlignment.Center; // Change text alignment to left
             }
-            update();
         }
 
         private void txbAddress_LostFocus(object sender, RoutedEventArgs e)
@@ -114,7 +118,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
                 textBox.TextAlignment = TextAlignment.Center; // Change text alignment to left
 
             }
-            update();
         }
 
 
@@ -132,7 +135,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
                 textBox.Text = "Projektbeskrivelse"; // Clear the placeholder text
                 textBox.TextAlignment = TextAlignment.Center; // Change text alignment to left
             }
-            update();
         }
 
         private void btnSaveProject_Click(object sender, RoutedEventArgs e)
@@ -154,8 +156,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 
             Thread workThread = new Thread(CreationConfirmation);
             workThread.Start();
-
-            update();
 
         }
 
