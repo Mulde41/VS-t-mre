@@ -11,13 +11,42 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     {
 
         private MainViewModel mvm = new MainViewModel();
-       
+
         public ProjectMakerView()
         {
-            this.DataContext = mvm;
             InitializeComponent();
+            this.DataContext = mvm;
+
+            Update();
 
         }
+
+        public void Update()
+        {
+            // Check if controls are not null before accessing their properties
+            if (txbTitle != null && (txbTitle.Text == "" || txbTitle.Text == "Titel"))
+            {
+                if (btnSaveProject != null)
+                    btnSaveProject.IsEnabled = false;
+            }
+            else if (txbAddress != null && (txbAddress.Text == "" || txbAddress.Text == "Adresse"))
+            {
+                if (btnSaveProject != null)
+                    btnSaveProject.IsEnabled = false;
+            }
+            else if (txbOffer != null && (txbOffer.Text == "" || txbOffer.Text == "Tilbud"))
+            {
+                if (btnSaveProject != null)
+                    btnSaveProject.IsEnabled = false;
+            }
+            else
+            {
+                if (btnSaveProject != null)
+                    btnSaveProject.IsEnabled = true;
+            }
+        }
+
+
 
         private void txbTitle_GotFocus(object sender, RoutedEventArgs e)
         {
@@ -86,11 +115,11 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             {
                 textBox.Text = "Adresse"; // Clear the placeholder text
                 textBox.TextAlignment = TextAlignment.Center; // Change text alignment to left
-                
+
             }
         }
 
-        
+
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
@@ -126,7 +155,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 
             Thread workThread = new Thread(CreationConfirmation);
             workThread.Start();
-
         }
 
         public void CreationConfirmation()
@@ -137,5 +165,28 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             // Change the label back to the original content and stop the timer
             lblCreateProject.Dispatcher.Invoke(new Action(() => { lblCreateProject.Content = ""; }));
         }
+
+        private void txbAddress_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Update();
+        }
+
+        private void txbTitle_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Update();
+        }
+
+
+
+        private void txbOffer_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Update();
+        }
+
+        private void txbDescription_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Update();
+        }
     }
 }
+

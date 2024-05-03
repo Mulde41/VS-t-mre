@@ -17,7 +17,8 @@
                  Width="220"
                  TextAlignment="Center"
                  GotFocus="txbTitle_GotFocus"
-                 LostFocus="txbTitle_LostFocus" />
+                 LostFocus="txbTitle_LostFocus"
+                 TextChanged="txbTitle_TextChanged" />
         <TextBox x:Name="txbOffer"
                  HorizontalAlignment="Left"
                  Margin="75,151,0,0"
@@ -27,7 +28,8 @@
                  Width="220"
                  TextAlignment="Center"
                  GotFocus="txbOffer_GotFocus"
-                 LostFocus="txbOffer_LostFocus" />
+                 LostFocus="txbOffer_LostFocus"
+                 TextChanged="txbOffer_TextChanged" />
         <TextBox x:Name="txbAddress"
                  HorizontalAlignment="Left"
                  Margin="75,232,0,0"
@@ -37,7 +39,8 @@
                  Width="220"
                  TextAlignment="Center"
                  GotFocus="txbAddress_GotFocus"
-                 LostFocus="txbAddress_LostFocus" />
+                 LostFocus="txbAddress_LostFocus"
+                 TextChanged="txbAddress_TextChanged" />
 
         <TextBox x:Name="txbDescription"
                  HorizontalAlignment="Left"
@@ -49,7 +52,8 @@
                  Height="181"
                  TextAlignment="Center"
                  GotFocus="txbDescription_GotFocus"
-                 LostFocus="txbDescription_LostFocus" />
+                 LostFocus="txbDescription_LostFocus"
+                 TextChanged="txbDescription_TextChanged" />
         <Button x:Name="btnSaveProject"
                 Content="Gem Projekt"
                 HorizontalAlignment="Center"
