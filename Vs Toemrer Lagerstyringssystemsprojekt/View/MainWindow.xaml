@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Vs_Toemrer_Lagerstyringssystemsprojekt"
+        xmlns:local="clr-namespace:Vs_Toemrer_Lagerstyringssystemsprojekt" xmlns:local1="clr-namespace:Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel"
         mc:Ignorable="d"
         Title="MainWindow"
         Height="500"
@@ -11,12 +11,13 @@
         WindowStartupLocation="CenterScreen"
         UseLayoutRounding="True"
         SnapsToDevicePixels="True">
-    <DockPanel>
-        <StackPanel DockPanel.Dock="Left" Width="100" Background="LightGray">
-            <Button x:Name="Projekter" Content="Projekter" Click="Projekter_Click" Height="50"/>
-            <Button x:Name="Lager" Content="Lager" Click="Lager_Click" Height="50"/>
-            <Button x:Name="Register" Content="Register" Click="Register_Click" Height="50"/>
+    <DockPanel x:Name="ViewDockPanel">
+        <StackPanel x:Name="MainViewStackPanel" DockPanel.Dock="Left" Width="100" Background="LightGray">
+            <Button x:Name="btnProjects" Content="Projekter" Click="Projects_Click" Height="50"/>
+            <Button x:Name="btnStorage" Content="Lager" Click="Storage_Click" Height="50"/>
+            <Button x:Name="btnRegistry" Content="Register" Click="Registry_Click" Height="50"/>
         </StackPanel>
         <ContentControl x:Name="MainContent"/>
     </DockPanel>
+
 </Window>

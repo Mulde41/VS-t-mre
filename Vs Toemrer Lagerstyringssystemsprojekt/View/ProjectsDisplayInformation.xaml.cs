@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 {
@@ -20,9 +21,16 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     /// </summary>
     public partial class ProjectsDisplayInformation : UserControl
     {
+        MainViewModel mvm = new MainViewModel();
         public ProjectsDisplayInformation()
         {
+            LoadLists();
             InitializeComponent();
+        }
+        private void LoadLists()
+        {
+            
+
         }
     }
 }

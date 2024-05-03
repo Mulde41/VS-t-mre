@@ -29,7 +29,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
             {
                 connection.Open();
 
-                SqlCommand command = new SqlCommand("SELECT Title, Offer, ProjectDescription, Address FROM PROJECT", connection);
+                SqlCommand command = new SqlCommand("SELECT Title, Offer, Address, ProjectDescription FROM PROJECT", connection);
 
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
@@ -39,8 +39,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
                             (
                                reader["Title"].ToString(),
                                Convert.ToDouble(reader["Offer"].ToString()),
-                               reader["ProjectDescription"].ToString(),
-                               reader["Address"].ToString()
+                               reader["Address"].ToString(),
+                               reader["ProjectDescription"].ToString()
                             );
                         projects.Add(project);
                     }

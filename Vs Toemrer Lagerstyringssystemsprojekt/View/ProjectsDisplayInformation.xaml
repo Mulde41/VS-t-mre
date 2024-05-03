@@ -7,12 +7,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="600">
     <Grid>
-        <StackPanel>
-            <Label Content="{Binding SelectedItem.Title, ElementName=ProjectsListBox}" FontSize="16" FontWeight="Bold" />
-            <Label Content="{Binding SelectedItem.Price, ElementName=ProjectsListBox}" />
-            <Label Content="{Binding SelectedItem.Address, ElementName=ProjectsListBox}" />
-            <Label Content="{Binding SelectedItem.Description, ElementName=ProjectsListBox}" />
-        </StackPanel>
+
+        <Label x:Name="ProjectTitle" Content="{Binding SelectedProject.Title}" Height="30" Width="100" Margin="-250,50,0,0" Background="LightGray"/>
+        <Label x:Name="ProjectOffer" Content="{Binding SelectedProject.Offer}" Height="30" Width="100" Margin="250,-50,0,0" Background="LightGray"/>
+        <Label x:Name="ProjectAddress" Content="{Binding SelectedProject.Address}" Height="30" Width="100" Margin="-250,-50,0,0" Background="LightGray"/>
+        <Label x:Name="ProjectProjectDescription" Content="{Binding SelectedProject.ProjectDescription}" Height="30" Width="100" Margin="250,50,0,0" Background="LightGray"/>
+
 
     </Grid>
+
+
 </UserControl>

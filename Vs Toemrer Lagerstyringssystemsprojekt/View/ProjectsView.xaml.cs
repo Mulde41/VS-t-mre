@@ -24,10 +24,11 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     public partial class ProjectsView : UserControl
     {
         private MainViewModel mvm = new MainViewModel();
+        ProjectMakerView mainContent = new ProjectMakerView();
 
         public ProjectsView()
         {
-            DataContext = mvm;
+            this.DataContext = mvm;
             InitializeComponent();
             LoadLists();
         }
@@ -39,11 +40,12 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         }
         private void ProjectsListBoxFocus(object sender, RoutedEventArgs e)
         {
+
+            MainContent.Content = new ProjectsDisplayInformation();
         }
 
         private void btnCreateProject_Click(object sender, RoutedEventArgs e)
         {
-            ProjectMakerView mainContent = new ProjectMakerView();
             MainContent.Content = mainContent;
         }
         

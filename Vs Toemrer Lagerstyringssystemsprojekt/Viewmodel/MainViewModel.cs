@@ -11,14 +11,19 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
     public class MainViewModel : INotifyPropertyChanged
     {
+
+        public Project SelectedProject { get; set; }
+
         public event PropertyChangedEventHandler? PropertyChanged;
-        //private ProjectRepository projectRepository = new ProjectRepository();
 
         private ProjectRepository projectRepo;
-        //public MainViewModel(ProjectRepository projectRepository) // DEPENDENCY INJECTION, add more repositories as more are needed
+        
         public MainViewModel()
         {
-            projectRepo = new ProjectRepository();        }
+            projectRepo = new ProjectRepository();        
+        }
+
+
 
         public void CreateProject(string title, double offer, string address, string projectDescription)
         {
