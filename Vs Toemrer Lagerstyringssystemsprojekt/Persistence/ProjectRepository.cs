@@ -8,14 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
+using System.Collections;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 {
     public class ProjectRepository
     {
-
-        
-
         private List<Project> projects = new List<Project>();
 
         public ProjectRepository() 
@@ -68,5 +66,17 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
             return projects;
         }
 
+        public Project Get(string title)
+        {
+            //Project result = null;
+            //foreach (Project pro in projects)
+            //{
+            //    if (pro.Title == title)
+            //       result = pro;
+            //}
+            //return result;
+
+            return projects.Find(project => project.Title == title);
+        }
     }
 }
