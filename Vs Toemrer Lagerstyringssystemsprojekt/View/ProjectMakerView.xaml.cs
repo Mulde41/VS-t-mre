@@ -16,9 +16,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         {
             InitializeComponent();
             this.DataContext = mvm;
-
             Update();
-
         }
 
         public void Update()
@@ -122,7 +120,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
                 }
             }
         }
-
         public void CreationConfirmation()
         {
             //Change the label content and start the timer
