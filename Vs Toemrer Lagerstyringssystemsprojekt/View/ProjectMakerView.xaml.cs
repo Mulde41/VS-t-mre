@@ -24,12 +24,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         public void Update()
         {
             // Check if controls are not null before accessing their properties
-            if (txbTitle != null && (txbTitle.Text == "" || txbTitle.Text == "Titel"))
-            {
-                if (btnSaveProject != null)
-                    btnSaveProject.IsEnabled = false;
-            }
-            else if (txbAddress != null && (txbAddress.Text == "" || txbAddress.Text == "Adresse"))
+
+            if (txbAddress != null && (txbAddress.Text == "" || txbAddress.Text == "Adresse"))
             {
                 if (btnSaveProject != null)
                     btnSaveProject.IsEnabled = false;
@@ -44,6 +40,41 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
                 if (btnSaveProject != null)
                     btnSaveProject.IsEnabled = true;
             }
+        }
+
+        public bool TitleUpdater()
+        {
+            // Check if controls are not null before accessing their properties
+            if ( txbTitle != null && btnSaveProject != null && lblTitle != null)
+            {
+                if (btnSaveProject != null && txbTitle.Text == "Titel")
+                {
+                    btnSaveProject.IsEnabled = false;
+                }
+                //Handles if title only contains spaces
+                if (txbTitle.Text.Trim().Length == 0)
+                {
+                    btnSaveProject.IsEnabled = false;
+                    lblTitle.Content = "Feltet skal udfyldes!";
+                    return false;
+                }
+                //Handles if title contains other than spaces
+                else if (txbTitle.Text.Trim().Length != 0)
+                {
+                    btnSaveProject.IsEnabled = true;
+                    lblTitle.Content = "";
+                    return true;
+                }
+            }
+            return false;
+        }
+        public void OfferUpdater()
+        {
+
+        }
+        public void AddressUpdater()
+        {
+
         }
 
 
@@ -166,19 +197,18 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             lblCreateProject.Dispatcher.Invoke(new Action(() => { lblCreateProject.Content = ""; }));
         }
 
-        private void txbAddress_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Update();
-        }
 
         private void txbTitle_TextChanged(object sender, TextChangedEventArgs e)
         {
             Update();
+            TitleUpdater();
         }
 
-
-
         private void txbOffer_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Update();
+        }
+        private void txbAddress_TextChanged(object sender, TextChangedEventArgs e)
         {
             Update();
         }

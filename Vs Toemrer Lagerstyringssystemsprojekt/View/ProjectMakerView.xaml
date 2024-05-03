@@ -76,6 +76,24 @@
                Width="198" 
                HorizontalContentAlignment="Center"
                FontSize="15"/>
+        <Label x:Name="lblTitle"
+               Content=""
+               HorizontalAlignment="Left"
+               Margin="75,87,0,0"
+               VerticalAlignment="Top"
+               Width="220" />
+        <Label x:Name="lblOffer"
+               Content=""
+               HorizontalAlignment="Left"
+               Margin="75,169,0,0"
+               VerticalAlignment="Top"
+               Width="220" />
+        <Label x:Name="lblAddress"
+               Content=""
+               HorizontalAlignment="Left"
+               Margin="75,250,0,0"
+               VerticalAlignment="Top"
+               Width="220" />
 
     </Grid>
 </UserControl>
