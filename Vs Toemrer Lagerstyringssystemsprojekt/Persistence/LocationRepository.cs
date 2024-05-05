@@ -55,5 +55,10 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
         {
             return locations.ToList();
         }
+
+        IEnumerable<Location> IRepository<Location>.Get(string Identifier)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

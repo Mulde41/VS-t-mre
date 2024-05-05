@@ -70,10 +70,10 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
                     throw new ApplicationException("Error initializing nail repository", ex);
                 }
             }
-            _isInitialized = true; // Ensures initialization happens only once
+            _isInitialized = true;
         }
 
-        public Nail Get(string Identifier)
+        public IEnumerable<Nail> Get(string Identifier)
         {
             throw new NotImplementedException();
         }

@@ -70,12 +70,11 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
                 {
                     throw new ApplicationException("Error initializing screw repository", ex);
                 }
-                
             }
             _isInitialized = true; // Ensures initialization happens only once
         }
 
-        public Screw Get(string Identifier)
+        public IEnumerable<Screw> Get(string Identifier)
         {
             throw new NotImplementedException();
         }

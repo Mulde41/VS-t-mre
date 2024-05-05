@@ -23,8 +23,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
             projectRepo = new ProjectRepository();        
         }
 
-
-
         public void CreateProject(string title, double offer, string address, string projectDescription)
         {
             Project project = new Project(title, offer, address, projectDescription);

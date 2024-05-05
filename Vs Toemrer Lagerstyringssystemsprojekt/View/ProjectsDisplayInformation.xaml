@@ -12,6 +12,7 @@
         <Label x:Name="ProjectOffer" Content="{Binding SelectedProject.Offer}" Height="30" Width="100" Margin="250,-50,0,0" Background="LightGray"/>
         <Label x:Name="ProjectAddress" Content="{Binding SelectedProject.Address}" Height="30" Width="100" Margin="-250,-50,0,0" Background="LightGray"/>
         <Label x:Name="ProjectProjectDescription" Content="{Binding SelectedProject.ProjectDescription}" Height="30" Width="100" Margin="250,50,0,0" Background="LightGray"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,349,0,0" TextWrapping="Wrap" Text="{Binding SelectedProject}" VerticalAlignment="Top" Height="74" Width="250" Background="LightGray"/>
 
 
     </Grid>

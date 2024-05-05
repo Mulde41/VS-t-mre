@@ -78,7 +78,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
             return _wood_Materials;
         }
 
-        public Wood Get(string Identifier)
+        public IEnumerable<Wood> Get(string Identifier)
         {
             throw new NotImplementedException();
         }
