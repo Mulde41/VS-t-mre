@@ -12,16 +12,15 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
         public string ScrewHead { get; set; }
         public double Length { get; set; }
         public double Diameter { get; set; }
-        public override string Name { set { } get { return $"{ScrewHead} {Length}x{Diameter}mm {Treatment}"; } }
+        public override string Name { get => $"{ScrewHead} {Length}x{Diameter}mm {Treatment}"; }
 
         public Screw(string ScrewHead, double Length, double Diameter, int Quantity, string Treatment) : base(Quantity, Treatment)
         {
             this.ScrewHead = ScrewHead;
             this.Length = Length;
             this.Diameter = Diameter;
-            base.Quantity= Quantity ;
-            base.Treatment = Treatment;
-            Name = $"{ScrewHead} {Length}x{Diameter}mm {Treatment}";
+            //do not include base class attributes here. they are already included in the constructor
+            //do not define Name here it is already defined in the properties
         }
     }
 }

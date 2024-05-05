@@ -10,7 +10,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
     {
         public int Quantity { get; set; }
         public string Treatment { get; set; }
-        public abstract string Name { get; set; }
+        public abstract string Name { get;}
        
         protected Material(int quantity, string treatment)
         {
