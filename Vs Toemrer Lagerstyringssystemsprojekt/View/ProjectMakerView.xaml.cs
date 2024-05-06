@@ -24,7 +24,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             TitleUpdater();
             OfferUpdater();
             AddressUpdater();
-            btnSaveProjctUpdater();
+            btnSaveProjectUpdater();
         }
 
         public bool TitleUpdater()
@@ -106,7 +106,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             return false;
         }
 
-        public void btnSaveProjctUpdater()
+        public void btnSaveProjectUpdater()
         {
             if (btnSaveProject != null)
             {
