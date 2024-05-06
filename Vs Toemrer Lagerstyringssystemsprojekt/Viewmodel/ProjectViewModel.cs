@@ -1,25 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
-    public class ProjectViewModel
+    public class ProjectViewModel : INotifyPropertyChanged
     {
         public string Title { get; set; }
         public double Offer { get; set; }
         public string Address { get; set; }
         public string ProjectDescription { get; set; }
+        //public string Status { get; set; }
+        /*public List<Material> Materials { get; set; }*/
 
-        public ProjectViewModel(string title, double offer, string address, string projectDescription)
+        public ProjectViewModel(Project project)
         {
-            Title = title;
-            Offer = offer;
-            Address = address;
-            ProjectDescription = projectDescription;
+            Title = project.Title;
+            Offer = project.Offer;
+            Address = project.Address;
+            ProjectDescription = project.ProjectDescription;
+            //Status = "Aktiv"
+            /*Materials = new List<Material>();*/
         }
-
+        public event PropertyChangedEventHandler? PropertyChanged;
+        
     }
 }

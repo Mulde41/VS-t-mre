@@ -19,23 +19,25 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        MainViewModel mvm = new MainViewModel();   
         public MainWindow()
         {
+            this.DataContext = mvm;
             InitializeComponent();
         }
 
-        private void Lager_Click(object sender, RoutedEventArgs e)
-        {
-            MainContent.Content = new StorageView();
-        }
 
-        private void Projekter_Click(object sender, RoutedEventArgs e)
+        private void Projects_Click(object sender, RoutedEventArgs e)
         {
             MainContent.Content = new ProjectsView();
         }
 
-        private void Register_Click(object sender, RoutedEventArgs e)
+        private void Storage_Click(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new StorageView();
+        }
+
+        private void Registry_Click(object sender, RoutedEventArgs e)
         {
 
         }
