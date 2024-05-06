@@ -13,27 +13,23 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
     public class ProjectViewModel : INotifyPropertyChanged
     {
-        public Project SelectedProject { get; set; }
+        public string Title { get; set; }
+        public double Offer { get; set; }
+        public string Address { get; set; }
+        public string ProjectDescription { get; set; }
+        //public string Status { get; set; }
+        /*public List<Material> Materials { get; set; }*/
 
+        public ProjectViewModel(Project project)
+        {
+            Title = project.Title;
+            Offer = project.Offer;
+            Address = project.Address;
+            ProjectDescription = project.ProjectDescription;
+            //Status = "Aktiv"
+            /*Materials = new List<Material>();*/
+        }
         public event PropertyChangedEventHandler? PropertyChanged;
-        private ProjectRepository projectRepo;
-        public ObservableCollection<Project> ProjectsVM;
-        public ProjectViewModel(/*ProjectRepository repository*/) 
-        {
-            projectRepo = new ProjectRepository();
-            ProjectsVM = new ObservableCollection<Project>(projectRepo.GetAll());
-        }
-
-        public void CreateProject(string title, double offer, string address, string projectDescription)
-        {
-            Project project = new Project(title, offer, address, projectDescription);
-            //projectRepo.Add(project);
-            //ProjectsVM.Add(project);
-        }
-        public List<Project> GetAll()
-        {
-            return projectRepo.GetAll();
-        }
         
     }
 }

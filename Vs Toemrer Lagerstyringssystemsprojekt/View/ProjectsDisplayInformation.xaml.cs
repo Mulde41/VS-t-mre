@@ -21,12 +21,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     /// </summary>
     public partial class ProjectsDisplayInformation : UserControl
     {
-        MainViewModel mvm = new MainViewModel();
-        //ProjectViewModel pvm = new ProjectViewModel();
         public ProjectsDisplayInformation()
         {
-            //DataContext = pvm;
-            DataContext = mvm;
             InitializeComponent();
             LoadLists();
         }
