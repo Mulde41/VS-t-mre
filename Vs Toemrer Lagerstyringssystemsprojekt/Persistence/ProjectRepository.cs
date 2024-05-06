@@ -58,7 +58,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
                     {
                         connection.Open();
 
-                        SqlCommand command = new SqlCommand("SELECT Title, Offer, Address, ProjectDescription FROM PROJECT", connection);
+                        SqlCommand command = new SqlCommand("SELECT Title, Offer, Address, Description FROM PROJECT", connection);
 
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
@@ -67,9 +67,9 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
                                 Project project = new Project
                                     (
                                        reader["Title"].ToString(),
-                                       Convert.ToDouble(reader["Offer"].ToString()),
+                                       reader["Offer"].ToString(),
                                        reader["Address"].ToString(),
-                                       reader["ProjectDescription"].ToString()
+                                       reader["Description"].ToString()
                                     );
                                 projects.Add(project);
                             }
@@ -84,16 +84,15 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
             _isInitialized = true; // Ensures initialization happens only once
         }
 
-
         public void Add(Project project)
         {
             using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
             {
                 connection.Open();
-                SqlCommand command = new SqlCommand("INSERT INTO PROJECT(Title,Offer, ProjectDescription, Address)" + "VALUES(@Title,@Offer,@ProjectDescription, @Address)", connection);
+                SqlCommand command = new SqlCommand("INSERT INTO PROJECT(Title,Offer, Description, Address)" + "VALUES(@Title,@Offer,@Description, @Address)", connection);
                 command.Parameters.Add("@Title", SqlDbType.NVarChar).Value = project.Title;
-                command.Parameters.Add("@Offer", SqlDbType.Float).Value = project.Offer;
-                command.Parameters.Add("@ProjectDescription", SqlDbType.NVarChar).Value = project.ProjectDescription;
+                command.Parameters.Add("@Offer", SqlDbType.NVarChar).Value = project.Offer;
+                command.Parameters.Add("@Description", SqlDbType.NVarChar).Value = project.Description;
                 command.Parameters.Add("@Address", SqlDbType.NVarChar).Value = project.Address;
                 command.ExecuteNonQuery();
                 projects.Add(project);
@@ -104,6 +103,5 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
         {
             return projects;
         }
-
     }
 }
