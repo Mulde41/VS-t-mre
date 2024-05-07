@@ -21,7 +21,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
             ScrewHead = screw.ScrewHead;
             Length = screw.Length;
             Diameter = screw.Diameter;
-            Quantity = screw.Quantity;
+            
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;
