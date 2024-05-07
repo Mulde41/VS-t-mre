@@ -24,7 +24,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             TitleUpdater();
             OfferUpdater();
             AddressUpdater();
-            btnSaveProjctUpdater();
+            btnSaveProjectUpdater();
         }
 
         public bool TitleUpdater()
@@ -106,7 +106,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             return false;
         }
 
-        public void btnSaveProjctUpdater()
+        public void btnSaveProjectUpdater()
         {
             if (btnSaveProject != null)
             {
@@ -216,8 +216,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 
         private void btnSaveProject_Click(object sender, RoutedEventArgs e)
         {
-            double offer = double.Parse(txbOffer.Text);
-            mvm.CreateProject(txbTitle.Text, offer, txbAddress.Text, txbDescription.Text);
+            mvm.CreateProject(txbTitle.Text, txbOffer.Text, txbAddress.Text, txbDescription.Text);
 
             txbTitle.Text = "Titel"; // Clear the placeholder text
             txbTitle.TextAlignment = TextAlignment.Center; // Change text alignment to left
