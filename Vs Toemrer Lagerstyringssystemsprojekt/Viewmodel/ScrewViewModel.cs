@@ -8,15 +8,15 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
-    public class ScrewViewModel : MaterialViewModel,INotifyPropertyChanged
+    public class ScrewViewModel : MaterialViewModel, INotifyPropertyChanged
     {
-        public string ScrewHead {  get; set; }
+        public string ScrewHead { get; set; }
         public double Length { get; set; }
         public double Diameter { get; set; }
-       
 
 
-        public ScrewViewModel(Screw screw): base()
+
+        public ScrewViewModel(Screw screw, int Quantity, string Treatment, string Name) : base(Quantity, Treatment, Name)
         {
             ScrewHead = screw.ScrewHead;
             Length = screw.Length;
