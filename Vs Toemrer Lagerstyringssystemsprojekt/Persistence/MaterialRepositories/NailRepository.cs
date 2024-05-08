@@ -73,9 +73,19 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
             _isInitialized = true;
         }
 
-        public IEnumerable<Nail> Get(string Identifier)
+        public IEnumerable<Nail> Get(string partialName)
         {
-            throw new NotImplementedException();
+            List<Nail> matchingNails = new List<Nail>();
+
+            foreach (var nail in _nail_Materials)
+            {
+                if (nail.Name.IndexOf(partialName, StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    matchingNails.Add(nail);
+                }
+            }
+
+            return matchingNails;
         }
 
         public List<Nail> GetAll()

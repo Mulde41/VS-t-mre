@@ -28,6 +28,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
             InitializeRepository();
         }
 
+
+
         //Singleton pattern |
         //                  V      
         public static ProjectRepository Instance
