@@ -13,37 +13,23 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
     public class MaterialSearchViewModel : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler? PropertyChanged;
         private MaterialSearchService _searchService;
-        public ObservableCollection<Material> Materials { get; private set; }
-        public ICommand SearchCommand { get; private set; }
-        private string _searchTerm;
 
+        public event PropertyChangedEventHandler? PropertyChanged;
 
-        public string SearchTerm
+        public ObservableCollection<Material> SearchResults { get; private set; }
+
+        MaterialSearchViewModel() 
         {
-            get => _searchTerm;
-            set
-            {
-                _searchTerm = value;
-                OnPropertyChanged(nameof(SearchTerm));
-            }
+            SearchResults = new ObservableCollection<Material>();
         }
-
-        public MaterialSearchViewModel(MaterialSearchService searchService)
+        public void PerformSearch(string searchParameter)
         {
-            _searchService = searchService;
-            Materials = new ObservableCollection<Material>();
-            SearchCommand = new RelayCommand(PerformSearch);
-        }
-
-        private void PerformSearch()
-        {
-            Materials.Clear();
-            var results = _searchService.SearchMaterials(SearchTerm);
-            foreach (var material in results)
+            var results = _searchService.SearchMaterials(searchParameter);
+            SearchResults.Clear();
+            foreach (var item in results)
             {
-                Materials.Add(material);
+                SearchResults.Add(item);
             }
         }
     }
