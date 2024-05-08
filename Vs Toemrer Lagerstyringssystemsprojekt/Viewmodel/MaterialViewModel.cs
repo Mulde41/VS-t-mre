@@ -10,17 +10,17 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
-    public class MaterialViewModel : INotifyPropertyChanged 
+    public abstract class MaterialViewModel : INotifyPropertyChanged 
     {
         public int Quantity { get; set; }
         public string Treatment { get; set; }
         public string Name { get; set; }
 
-        public MaterialViewModel(Material material) 
+        public MaterialViewModel(int Quantity, string Treatment, string Name) 
         {
-            Quantity = material.Quantity;
-            Treatment = material.Treatment;
-            Name = material.Name;
+            this.Quantity = Quantity;
+            this.Treatment = Treatment;
+            this.Name = Name;
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;
