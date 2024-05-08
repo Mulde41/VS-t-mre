@@ -25,6 +25,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 
         public MaterialSearchViewModel()
         {
+            _searchService = new MaterialSearchService(woodRepository, nailRepository, screwRepository);
             SearchResults = new ObservableCollection<Material>();
         }
         public void PerformSearch(string searchParameter)
