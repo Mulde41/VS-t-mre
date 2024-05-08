@@ -74,9 +74,19 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
             _isInitialized = true; // Ensures initialization happens only once
         }
 
-        public IEnumerable<Screw> Get(string Identifier)
+        public IEnumerable<Screw> Get(string partialName)
         {
-            throw new NotImplementedException();
+            List<Screw> matchingScrews = new List<Screw>();
+
+            foreach (var screw in _screw_Materials)
+            {
+                if (screw.Name.IndexOf(partialName, StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    matchingScrews.Add(screw);
+                }
+            }
+
+            return matchingScrews;
         }
 
         public List<Screw> GetAll()
