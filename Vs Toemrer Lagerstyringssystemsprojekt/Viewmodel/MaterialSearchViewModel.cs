@@ -8,18 +8,22 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Business_Infrastructure;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositories;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
     public class MaterialSearchViewModel : INotifyPropertyChanged
     {
-        private MaterialSearchService _searchService;
+        WoodRepository woodRepository = new WoodRepository();
+        NailRepository nailRepository = new NailRepository();
+        ScrewRepository screwRepository = new ScrewRepository();
+        MaterialSearchService _searchService;
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
         public ObservableCollection<Material> SearchResults { get; private set; }
 
-        MaterialSearchViewModel() 
+        public MaterialSearchViewModel()
         {
             SearchResults = new ObservableCollection<Material>();
         }
@@ -31,6 +35,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
             {
                 SearchResults.Add(item);
             }
+
         }
     }
 }

@@ -21,15 +21,22 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     /// </summary>
     public partial class ProjectsDisplayInformation : UserControl
     {
+        MaterialSearchViewModel msvm = new MaterialSearchViewModel();
         public ProjectsDisplayInformation()
         {
+            this.DataContext = msvm;
             InitializeComponent();
             LoadLists();
         }
         private void LoadLists()
         {
-            
+            MaterialsList.ItemsSource = msvm.SearchResults;
 
+        }
+
+        private void Search_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            msvm.PerformSearch(Search.Text);
         }
     }
 }

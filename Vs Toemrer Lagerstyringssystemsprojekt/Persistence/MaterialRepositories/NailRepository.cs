@@ -48,7 +48,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
                     using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
                     {
                         connection.Open();
-                        SqlCommand command = new SqlCommand("SELECT Length, Form, Quantity, Treatment FROM NAIL_MATERIAL", connection);
+                        SqlCommand command = new SqlCommand("SELECT Length, Form, Quantity, Treatment FROM NAIL", connection);
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             while (reader.Read())
