@@ -17,6 +17,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 
         private ProjectRepository projectRepo;
 
+        
+
         public ProjectViewModel SelectedProject { get; set; }
         public ObservableCollection<ProjectViewModel> ProjectsVM;
         
