@@ -20,7 +20,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
         }
 
         //Singleton pattern |
-        //                  V      
+        //                  V
         public static ScrewRepository Instance
         {
             get

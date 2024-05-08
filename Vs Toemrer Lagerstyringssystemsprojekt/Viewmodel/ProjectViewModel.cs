@@ -14,7 +14,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
     public class ProjectViewModel : INotifyPropertyChanged
     {
         public string Title { get; set; }
-        public double Offer { get; set; }
+        public string Offer { get; set; }
         public string Address { get; set; }
         public string ProjectDescription { get; set; }
         //public string Status { get; set; }
@@ -25,7 +25,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
             Title = project.Title;
             Offer = project.Offer;
             Address = project.Address;
-            ProjectDescription = project.ProjectDescription;
+            ProjectDescription = project.Description;
             //Status = "Aktiv"
             /*Materials = new List<Material>();*/
         }
