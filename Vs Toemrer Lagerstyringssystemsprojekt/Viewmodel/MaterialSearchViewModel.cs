@@ -17,6 +17,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
         WoodRepository woodRepository = new WoodRepository();
         NailRepository nailRepository = new NailRepository();
         ScrewRepository screwRepository = new ScrewRepository();
+
+
         MaterialSearchService _searchService;
 
         public event PropertyChangedEventHandler? PropertyChanged;

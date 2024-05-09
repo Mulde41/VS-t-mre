@@ -105,5 +105,34 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
         {
             return projects;
         }
+        public void AddMaterialToProject(int projectId, int materialId, int quantity)
+        {
+            using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand("INSERT INTO ProjectMaterials(ProjectId, MaterialId, Quantity) VALUES (@ProjectId, @MaterialId, @Quantity)", connection);
+                command.Parameters.Add("@ProjectId", SqlDbType.Int).Value = projectId;
+                command.Parameters.Add("@MaterialId", SqlDbType.Int).Value = materialId;
+                command.Parameters.Add("@Quantity", SqlDbType.Int).Value = quantity;
+                command.ExecuteNonQuery();
+            }
+        }
+        public List<Material> GetMaterialsForProject(int projectId)
+        {
+            List<Material> materials = new List<Material>();
+            using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand("SELECT m.* FROM Materials m INNER JOIN ProjectMaterials pm ON m.MaterialId = pm.MaterialId WHERE pm.ProjectId = @ProjectId", connection);
+                command.Parameters.Add("@ProjectId", SqlDbType.Int).Value = projectId;
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    
+                       //materials.Add((reader));
+                }
+            }
+            return materials;
+        }
     }
 }

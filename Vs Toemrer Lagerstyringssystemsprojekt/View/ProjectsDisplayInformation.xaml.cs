@@ -21,6 +21,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     /// </summary>
     public partial class ProjectsDisplayInformation : UserControl
     {
+       
         MainViewModel mvm = new MainViewModel();
         MaterialSearchViewModel msvm = new MaterialSearchViewModel();
         public ProjectsDisplayInformation()
@@ -32,7 +33,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         }
         private void LoadLists()
         {
-            MaterialsList.ItemsSource = msvm.SearchResults;
+            //MaterialsList.ItemsSource = msvm.SearchResults;
+            ProjectsListView.ItemsSource = msvm.SearchResults;
 
         }
 
