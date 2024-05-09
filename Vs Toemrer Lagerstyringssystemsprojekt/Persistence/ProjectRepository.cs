@@ -128,7 +128,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    
+                        
                        //materials.Add((reader));
                 }
             }
