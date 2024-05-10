@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositories
@@ -45,7 +46,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
                     using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
                     {
                         connection.Open();
-                        SqlCommand command = new SqlCommand("SELECT Sort, Type, Height, Length, Width, Quantity, Treatment FROM WOOD_MATERIAL", connection);
+                        SqlCommand command = new SqlCommand("SELECT w.Sort, w.Type, w.Height, w.Length, w.Width, m.Quantity, m.Treatment FROM Wood AS w JOIN Material AS m ON w.MaterialID = m.MaterialID", connection);
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             while (reader.Read())
@@ -78,9 +79,22 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
             return _wood_Materials;
         }
 
-        public IEnumerable<Wood> Get(string Identifier)
+        public IEnumerable<Wood> Get(string partialName)
         {
-            throw new NotImplementedException();
+            // This list will hold all the wood items that contain the partialName in their Name property.
+            List<Wood> matchingWoods = new List<Wood>();
+
+            // Use the Contains method to check if the Name property of each wood includes the partialName.
+            foreach (Wood wood in _wood_Materials)
+            {
+                if (wood.Name.IndexOf(partialName, StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    matchingWoods.Add(wood);
+                }
+            }
+
+            // Return the list of matching woods
+            return matchingWoods;
         }
     }
 }

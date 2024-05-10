@@ -48,7 +48,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
                     using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
                     {
                         connection.Open();
-                        SqlCommand command = new SqlCommand("SELECT Length, Form, Quantity, Treatment FROM NAIL_MATERIAL", connection);
+                        SqlCommand command = new SqlCommand("SELECT n.Length, n.Form, m.Quantity, m.Treatment FROM NAIL AS n JOIN MATERIAL as m ON n.MaterialID = m.MaterialID", connection);
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             while (reader.Read())
@@ -73,9 +73,19 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
             _isInitialized = true;
         }
 
-        public IEnumerable<Nail> Get(string Identifier)
+        public IEnumerable<Nail> Get(string partialName)
         {
-            throw new NotImplementedException();
+            List<Nail> matchingNails = new List<Nail>();
+
+            foreach (var nail in _nail_Materials)
+            {
+                if (nail.Name.IndexOf(partialName, StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    matchingNails.Add(nail);
+                }
+            }
+
+            return matchingNails;
         }
 
         public List<Nail> GetAll()

@@ -20,7 +20,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
         }
 
         //Singleton pattern |
-        //                  V      
+        //                  V
         public static ScrewRepository Instance
         {
             get
@@ -48,7 +48,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
                     using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
                     {
                         connection.Open();
-                        SqlCommand command = new SqlCommand("SELECT ScrewHead, Length, Diameter, Form, Quantity, Treatment FROM SCREW_MATERIAL", connection);
+                        SqlCommand command = new SqlCommand("SELECT s.ScrewHead, s.Length, s.Diameter, m.Quantity, m.Treatment FROM SCREW AS s JOIN Material AS m ON s.MaterialID = m.MaterialID", connection);
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             while (reader.Read())
@@ -74,9 +74,19 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
             _isInitialized = true; // Ensures initialization happens only once
         }
 
-        public IEnumerable<Screw> Get(string Identifier)
+        public IEnumerable<Screw> Get(string partialName)
         {
-            throw new NotImplementedException();
+            List<Screw> matchingScrews = new List<Screw>();
+
+            foreach (var screw in _screw_Materials)
+            {
+                if (screw.Name.IndexOf(partialName, StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    matchingScrews.Add(screw);
+                }
+            }
+
+            return matchingScrews;
         }
 
         public List<Screw> GetAll()

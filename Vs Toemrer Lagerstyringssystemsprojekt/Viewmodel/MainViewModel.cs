@@ -17,6 +17,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 
         private ProjectRepository projectRepo;
 
+        
+
         public ProjectViewModel SelectedProject { get; set; }
         public ObservableCollection<ProjectViewModel> ProjectsVM;
         
@@ -27,7 +29,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
             ProjectsVM = new ObservableCollection<ProjectViewModel>(projects.Select(p => new ProjectViewModel(p)));
         }
 
-        public void CreateProject(string title, double offer, string address, string projectDescription)
+        public void CreateProject(string title, string offer, string address, string projectDescription)
         {
             Project project = new Project(title, offer, address, projectDescription);
             projectRepo.Add(project);
