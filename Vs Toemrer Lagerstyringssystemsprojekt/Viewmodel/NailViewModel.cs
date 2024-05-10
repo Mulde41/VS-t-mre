@@ -8,7 +8,7 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
-    internal class NailViewModel
+    public class NailViewModel
     {
         public double Length { get; set; }  
         public string Form {  get; set; }   

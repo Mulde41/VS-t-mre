@@ -25,23 +25,24 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 
         //Observable collections
         public ObservableCollection<ProjectViewModel> ProjectsVM;
-        public ObservableCollection<WoodRepository> WoodsVM;
-        public ObservableCollection<NailRepository> NailsVM;
-        public ObservableCollection<ScrewRepository> ScrewsVM;
+        public ObservableCollection<WoodViewModel> WoodsVM;
+        public ObservableCollection<NailViewModel> NailsVM;
+        public ObservableCollection<ScrewViewModel> ScrewsVM;
 
 
         public MainViewModel()
         {
+            //Repo instantiation
             projectRepo = new ProjectRepository();
             woodRepo = new WoodRepository();
             nailRepo = new NailRepository();
             screwRepo = new ScrewRepository();
 
+            //VM lists
             ProjectsVM= new ObservableCollection<ProjectViewModel>(projectRepo.GetAll().Select(project => new ProjectViewModel(project)));
-            var woods = woodRepo.GetAll();
-
-            
-            //WoodsVM = new ObservableCollection<WoodViewModel>(woodRepo.GetAll().Select(wood => new WoodViewModel(wood)));
+            WoodsVM = new ObservableCollection<WoodViewModel>(woodRepo.GetAll().Select(wood => new WoodViewModel(wood)));
+            NailsVM = new ObservableCollection<NailViewModel>(nailRepo.GetAll().Select(nail => new NailViewModel(nail)));
+            ScrewsVM = new ObservableCollection<ScrewViewModel>(screwRepo.GetAll().Select(screw => new ScrewViewModel(screw)));
         }
 
         public void CreateProject(string title, string offer, string address, string projectDescription)

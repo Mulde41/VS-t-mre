@@ -22,7 +22,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     public partial class ProjectsDisplayInformation : UserControl
     {
         MainViewModel mvm = new MainViewModel();
-        MaterialSearchViewModel msvm = new MaterialSearchViewModel();
+        MaterialSearchHandler msvm = new MaterialSearchHandler();
         public ProjectsDisplayInformation()
         {
             //this.DataContext = msvm;

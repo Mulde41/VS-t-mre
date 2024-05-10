@@ -13,7 +13,7 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositories;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
-    public class MaterialSearchViewModel : INotifyPropertyChanged
+    public class MaterialSearchHandler<T> : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -21,14 +21,14 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
         NailRepository nailRepository = new NailRepository();
         ScrewRepository screwRepository = new ScrewRepository();
 
-        MaterialSearchService _searchService;
+        MaterialSearchService<IEnumerable<T>> _searchService;
 
 
         public ObservableCollection<IMaterial> SearchResults { get; private set; }
 
-        public MaterialSearchViewModel()
+        public MaterialSearchHandler()
         {
-            _searchService = new MaterialSearchService(woodRepository, nailRepository, screwRepository);
+            _searchService = new MaterialSearchService<IEnumerable<T>(woodRepository, nailRepository, screwRepository);
             SearchResults = new ObservableCollection<IMaterial>();
         }
         public void PerformSearch(string searchParameter)

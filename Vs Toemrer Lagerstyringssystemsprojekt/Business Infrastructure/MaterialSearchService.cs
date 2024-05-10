@@ -12,28 +12,48 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositories;
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Business_Infrastructure
 {
     // Denne klasse er en del af GRASP. Pure fabrication. man laver en klasse der ikke eksistere i domænet. det er de .9 pattern i GRASP
-    public class MaterialSearchService
+    public class MaterialSearchService<T>
     {
-        private WoodRepository _woodRepository;
-        private NailRepository _nailRepository;
-        private ScrewRepository _screwRepository;
+        //private WoodRepository _woodRepository;
+        //private NailRepository _nailRepository;
+        //private ScrewRepository _screwRepository;
 
-        public MaterialSearchService(WoodRepository woodRepository, NailRepository nailRepository, ScrewRepository screwRepository)
+        //public MaterialSearchService(WoodRepository woodRepository, NailRepository nailRepository, ScrewRepository screwRepository)
+        //{
+        //    _woodRepository = woodRepository;
+        //    _nailRepository = nailRepository;
+        //    _screwRepository = screwRepository;
+        //}
+
+        //public IEnumerable<IMaterial> SearchMaterials(string searchTerm)
+        //{
+        //    // Get matching materials from each repository
+        //    var woods = _woodRepository.Get(searchTerm).Cast<IMaterial>();
+        //    var nails = _nailRepository.Get(searchTerm).Cast<IMaterial>();
+        //    var screws = _screwRepository.Get(searchTerm).Cast<IMaterial>();
+
+        //    // Combine all results into a single list
+        //    return woods.Concat(nails).Concat(screws);    
+        //}
+        private IRepository<T> _repository1;
+        private IRepository<T> _repository2;
+        private IRepository<T> _repository3;
+
+        public MaterialSearchService(IRepository<T> repository1, IRepository<T> repository2, IRepository<T> repository3)
         {
-            _woodRepository = woodRepository;
-            _nailRepository = nailRepository;
-            _screwRepository = screwRepository;
+            _repository1 = repository1;
+            _repository2 = repository2;
+            _repository3 = repository3;
         }
 
-        public IEnumerable<IMaterial> SearchMaterials(string searchTerm)
+        public IEnumerable<T> SearchMaterials(string searchTerm)
         {
-            // Get matching materials from each repository
-            var woods = _woodRepository.Get(searchTerm).Cast<IMaterial>();
-            var nails = _nailRepository.Get(searchTerm).Cast<IMaterial>();
-            var screws = _screwRepository.Get(searchTerm).Cast<IMaterial>();
+            var items1 = _repository1.Get(searchTerm);
+            var items2 = _repository2.Get(searchTerm);
+            var items3 = _repository3.Get(searchTerm);
 
             // Combine all results into a single list
-            return woods.Concat(nails).Concat(screws);    
+            return items1.Concat(items2).Concat(items3);
         }
     }
 }
