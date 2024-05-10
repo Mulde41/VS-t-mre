@@ -8,25 +8,28 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Business_Infrastructure;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositories;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
     public class MaterialSearchViewModel : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler? PropertyChanged;
+
         WoodRepository woodRepository = new WoodRepository();
         NailRepository nailRepository = new NailRepository();
         ScrewRepository screwRepository = new ScrewRepository();
+
         MaterialSearchService _searchService;
 
-        public event PropertyChangedEventHandler? PropertyChanged;
 
-        public ObservableCollection<Material> SearchResults { get; private set; }
+        public ObservableCollection<IMaterial> SearchResults { get; private set; }
 
         public MaterialSearchViewModel()
         {
             _searchService = new MaterialSearchService(woodRepository, nailRepository, screwRepository);
-            SearchResults = new ObservableCollection<Material>();
+            SearchResults = new ObservableCollection<IMaterial>();
         }
         public void PerformSearch(string searchParameter)
         {

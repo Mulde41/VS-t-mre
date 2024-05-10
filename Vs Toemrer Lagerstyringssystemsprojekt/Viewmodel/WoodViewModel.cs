@@ -8,24 +8,25 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
-    public class WoodViewModel : MaterialViewModel, INotifyPropertyChanged
+    public class WoodViewModel
     {
         public string Sort {  get; set; }
         public string Type { get; set; }
         public double Height { get; set; }
         public double Width { get; set; }
         public double Length { get; set; }
+        public int Quantity { get; set; }
+        public string Treatment { get; set; }
 
-        public WoodViewModel(Wood wood, int Quantity, string Name, string Treatment) : base (Quantity, Name, Treatment)
+        public WoodViewModel(Wood wood)
         { 
-            Sort = wood.Sort;
-            Type = wood.Type;
-            Height = wood.Height;
-            Width = wood.Width;
-            Length = wood.Length;
-            
+            this.Sort = wood.Sort;
+            this.Type = wood.Type;
+            this.Height = wood.Height;
+            this.Width = wood.Width;
+            this.Length = wood.Length;
+            this.Quantity = wood.Quantity;
+            this.Treatment = wood.Treatment;
         }
-
-        public event PropertyChangedEventHandler? PropertyChanged;
     }
 }

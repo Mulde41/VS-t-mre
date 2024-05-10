@@ -46,7 +46,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
                     using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
                     {
                         connection.Open();
-                        SqlCommand command = new SqlCommand("SELECT w.Sort, w.Type, w.Height, w.Length, w.Width, m.Quantity, m.Treatment FROM Wood AS w JOIN Material AS m ON w.MaterialID = m.MaterialID", connection);
+                        SqlCommand command = new SqlCommand("SELECT Sort, Type, Height, Length, Width, Quantity, Treatment FROM WOOD", connection);
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             while (reader.Read())
@@ -55,11 +55,11 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
                                 (
                                     reader["Sort"].ToString(),
                                     reader["Type"].ToString(),
-                                    reader["Treatment"].ToString(),
                                     Convert.ToDouble(reader["Height"].ToString()),
                                     Convert.ToDouble(reader["Length"].ToString()),
                                     Convert.ToDouble(reader["Width"].ToString()),
-                                    int.Parse(reader["Quantity"].ToString())
+                                    int.Parse(reader["Quantity"].ToString()),
+                                    reader["Treatment"].ToString()
                                 );
                                 _wood_Materials.Add(wood);
                             }

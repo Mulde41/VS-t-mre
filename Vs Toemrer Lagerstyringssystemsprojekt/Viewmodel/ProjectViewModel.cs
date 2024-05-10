@@ -11,14 +11,12 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
-    public class ProjectViewModel : INotifyPropertyChanged
+    public class ProjectViewModel
     {
         public string Title { get; set; }
         public string Offer { get; set; }
         public string Address { get; set; }
         public string Description { get; set; }
-        //public string Status { get; set; }
-        /*public List<Material> Materials { get; set; }*/
 
         public ProjectViewModel(Project project)
         {
@@ -26,9 +24,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
             Offer = project.Offer;
             Address = project.Address;
             Description = project.Description;
-            //Status = "Aktiv"
-            /*Materials = new List<Material>();*/
         }
-        public event PropertyChangedEventHandler? PropertyChanged;
     }
 }

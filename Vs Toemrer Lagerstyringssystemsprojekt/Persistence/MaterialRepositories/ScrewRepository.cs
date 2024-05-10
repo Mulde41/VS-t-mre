@@ -48,7 +48,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
                     using (SqlConnection connection = new SqlConnection(RepositoryHelper.connectionString))
                     {
                         connection.Open();
-                        SqlCommand command = new SqlCommand("SELECT s.ScrewHead, s.Length, s.Diameter, m.Quantity, m.Treatment FROM SCREW AS s JOIN Material AS m ON s.MaterialID = m.MaterialID", connection);
+                        SqlCommand command = new SqlCommand("SELECT ScrewHead, Length, Diameter, Quantity, Treatment FROM SCREW", connection);
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             while (reader.Read())

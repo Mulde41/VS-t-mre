@@ -4,21 +4,24 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Model
 {
-    public class Nail : Material
+    public class Nail : IMaterial
     {
         public double Length { get; set; }
         public string Form { get; set; }
-        public override string Name { get => $"{Form} {Length}mm {Treatment}"; }
-        //this is a derrived property as its constructed from other properties
-        //only implement the get function to essentially make it read only. it can not be set
+        public int Quantity { get; set; }
+        public string Treatment { get; set; }
+        public string Name { get => $"{Form} {Length}mm {Treatment}"; }
 
-        public Nail(double Length, string Form, int Quantity, string Treatment) : base(Quantity, Treatment)
+        public Nail(double Length, string Form, int Quantity, string Treatment)
         {
             this.Length = Length;
             this.Form = Form;
+            this.Quantity = Quantity;
+            this.Treatment = Treatment;
         }
     }
 }

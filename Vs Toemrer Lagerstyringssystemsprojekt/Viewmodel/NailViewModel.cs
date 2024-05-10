@@ -8,17 +8,20 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
-    internal class NailViewModel : MaterialViewModel, INotifyPropertyChanged
+    internal class NailViewModel
     {
         public double Length { get; set; }  
         public string Form {  get; set; }   
+        public int Quantity {  get; set; } 
+        public string Treatment { get; set; }
+        public string Name { get; set; }
 
-        public NailViewModel(Nail nail, int Quantity, string Treatment, string Name) : base(Quantity, Treatment, Name)
+        public NailViewModel(Nail nail)
         {
-            Length = nail.Length;
-            Form = nail.Form;
+            this.Length = nail.Length;
+            this.Form = nail.Form;
+            this.Quantity = nail.Quantity;
+            this.Treatment = nail.Treatment;
         }
-
-        public event PropertyChangedEventHandler? PropertyChanged;
     }
 }
