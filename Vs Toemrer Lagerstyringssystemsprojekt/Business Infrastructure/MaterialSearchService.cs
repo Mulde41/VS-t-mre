@@ -9,28 +9,32 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositories;
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Business_Infrastructure
 {
     // Denne klasse er en del af GRASP. Pure fabrication. man laver en klasse der ikke eksistere i domænet. det er de .9 pattern i GRASP
-    public class MaterialSearchService
+    public class MaterialSearchService<List>
     {
-        private WoodRepository _woodRepository;
-        private NailRepository _nailRepository;
-        private ScrewRepository _screwRepository;
+        //private WoodRepository _woodRepository;
+        //private NailRepository _nailRepository;
+        //private ScrewRepository _screwRepository;
 
-        public MaterialSearchService(WoodRepository woodRepository, NailRepository nailRepository, ScrewRepository screwRepository)
+        //public MaterialSearchService(WoodRepository woodRepository, NailRepository nailRepository, ScrewRepository screwRepository)
+        //{
+        //    _woodRepository = woodRepository;
+        //    _nailRepository = nailRepository;
+        //    _screwRepository = screwRepository;
+        //}
+
+        public List<List<T>> SearchMaterials<T>(IEnumerable<List<T>> source, T searchTerm)
         {
-            _woodRepository = woodRepository;
-            _nailRepository = nailRepository;
-            _screwRepository = screwRepository;
-        }
+            var matchingLists = new List<List<T>>();
 
-        public IEnumerable<Material> SearchMaterials(string searchTerm)
-        {
-            // Get matching materials from each repository
-            var woods = _woodRepository.Get(searchTerm).Cast<Material>();
-            var nails = _nailRepository.Get(searchTerm).Cast<Material>();
-            var screws = _screwRepository.Get(searchTerm).Cast<Material>();
+            foreach (var materialList in source)
+            {
+                if (materialList.Contains(searchTerm))
+                {
+                    matchingLists.Add(materialList);
+                }
+            }
 
-            // Combine all results into a single list
-            return woods.Concat(nails).Concat(screws);
+            return matchingLists;
         }
     }
 }
