@@ -40,7 +40,18 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 
         private void Search_TextChanged(object sender, TextChangedEventArgs e)
         {
-            msvm.PerformSearch(Search.Text);
+            msvm.PerformSearch(txbSeachbar.Text);
+        }
+
+        private void txbSeachbar_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txbSeachbar.Text = "";
+        }
+
+        private void ProjectsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            lblMaterialName.Content = "Materiale: " + msvm.SearchResults[ProjectsListView.SelectedIndex].Name;
+            lblMaterialQuantity.Content = "Antal: " + msvm.SearchResults[ProjectsListView.SelectedIndex].Quantity;
         }
     }
 }

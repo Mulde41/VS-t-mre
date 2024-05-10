@@ -8,21 +8,24 @@
              d:DesignHeight="450"
              d:DesignWidth="600">
     <Grid>
-        <Label x:Name="lblTitle" Content="{Binding SelectedProject.Title}"
+        <Label x:Name="lblTitle"
+               Content="{Binding SelectedProject.Title}"
                HorizontalAlignment="Left"
                Margin="20,22,0,0"
                VerticalAlignment="Top"
                Background="LightGray"
                Height="25"
                Width="300" />
-        <Label x:Name="lblOffor" Content="{Binding SelectedProject.Offer}"
+        <Label x:Name="lblOffor"
+               Content="{Binding SelectedProject.Offer}"
                HorizontalAlignment="Left"
                Margin="20,80,0,0"
                VerticalAlignment="Top"
                Background="LightGray"
                Height="25"
                Width="300" />
-        <Label x:Name="lblAddress" Content="{Binding SelectedProject.Address}"
+        <Label x:Name="lblAddress"
+               Content="{Binding SelectedProject.Address}"
                HorizontalAlignment="Left"
                Margin="20,140,0,0"
                VerticalAlignment="Top"
@@ -33,16 +36,52 @@
                Content="{Binding SelectedProject.Description}"
                Margin="345,22,35,285"
                Background="LightGray" />
-        <TextBox x:Name="Search" HorizontalAlignment="Left" Margin="20,186,0,0" TextWrapping="Wrap" Text="Søg her" VerticalAlignment="Top" Width="140" TextChanged="Search_TextChanged"/>
-        <ListView x:Name="ProjectsListView" d:ItemsSource="{Binding SearchResults}" Margin="20,225,0,26" HorizontalAlignment="Left" Width="300">
+        <TextBox x:Name="txbSeachbar"
+                 HorizontalAlignment="Left"
+                 Margin="20,186,0,0"
+                 TextWrapping="Wrap"
+                 Text="TextBox"
+                 VerticalAlignment="Top"
+                 Width="140"
+                 TextChanged="Search_TextChanged"
+                 GotFocus="txbSeachbar_GotFocus"
+                  />
+        <ListView x:Name="ProjectsListView"
+                  d:ItemsSource="{Binding SearchResults}"
+                  Margin="20,225,0,26"
+                  HorizontalAlignment="Left"
+                  Width="300"
+                  SelectionChanged="ProjectsListView_SelectionChanged">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Navn" DisplayMemberBinding="{Binding Name}" Width="220"/>
-                    <GridViewColumn Header="Antal" DisplayMemberBinding="{Binding Quantity}" Width="40"/>
+                    <GridViewColumn Header="Navn"
+                                    DisplayMemberBinding="{Binding Name}"
+                                    Width="260" />
+                    <GridViewColumn Header="Antal"
+                                    DisplayMemberBinding="{Binding Quantity}"
+                                    Width="40" />
                 </GridView>
             </ListView.View>
         </ListView>
-        <TextBox x:Name="txbDescription" HorizontalAlignment="Left" Margin="345,10,0,0" TextWrapping="Wrap" Text="Opgavebeskrivelse" VerticalAlignment="Top" Width="220" HorizontalContentAlignment="Center"/>
+        <Button x:Name="btnAddToProject"
+                Content="Tilføj til Projekt"
+                HorizontalAlignment="Left"
+                Margin="490,386,0,0"
+                VerticalAlignment="Top"
+                Height="38"
+                Width="100" />
+        <Label x:Name="lblMaterialName"
+               Content=""
+               HorizontalAlignment="Left"
+               Margin="360,225,0,0"
+               VerticalAlignment="Top"
+               Width="205" />
+        <Label x:Name="lblMaterialQuantity"
+               Content=""
+               HorizontalAlignment="Left"
+               Margin="360,256,0,0"
+               VerticalAlignment="Top"
+               Width="205" />
     </Grid>
 
 
