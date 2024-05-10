@@ -21,13 +21,10 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     public partial class AddMaterialView : Window
     {
         MainViewModel mvm = new MainViewModel();
-        MaterialSearchViewModel msvm = new MaterialSearchViewModel();
-
-        public AddMaterialView(string materialName, string materialQuantity)
+        public AddMaterialView()
         {
             InitializeComponent();
-            lblMaterial.Content = ;
-            lblQuantity.Content = "Antal: " + msvm.SearchResults[ProjectsListView.SelectedIndex].Quantity;
+            
         }
 
         

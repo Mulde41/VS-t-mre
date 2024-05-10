@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +33,25 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Business_Infrastructure
 
             // Combine all results into a single list
             return woods.Concat(nails).Concat(screws);
+        }
+        WoodRepository woodRepository = new WoodRepository();
+        NailRepository nailRepository = new NailRepository();
+        ScrewRepository screwRepository = new ScrewRepository();
+
+
+        MaterialSearchService _searchService;
+        public ObservableCollection<Material> SearchResults { get; private set; }
+
+        
+        public void PerformSearch(string searchParameter)
+        {
+            var results = _searchService.SearchMaterials(searchParameter);
+            SearchResults.Clear();
+            foreach (var item in results)
+            {
+                SearchResults.Add(item);
+            }
+
         }
     }
 }

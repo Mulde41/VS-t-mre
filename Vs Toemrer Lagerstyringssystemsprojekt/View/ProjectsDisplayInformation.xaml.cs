@@ -12,46 +12,49 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Business_Infrastructure;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositories;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 {
-    /// <summary>
-    /// Interaction logic for ProjectsDisplayInformation.xaml
-    /// </summary>
     public partial class ProjectsDisplayInformation : UserControl
     {
-       
         MainViewModel mvm = new MainViewModel();
-        MaterialSearchViewModel msvm = new MaterialSearchViewModel();
+        MaterialSearchService mss;
         public ProjectsDisplayInformation()
         {
-            //this.DataContext = msvm;
-            //this.DataContext = mvm;
+            this.DataContext = mvm;
             InitializeComponent();
             LoadLists();
         }
         private void LoadLists()
         {
-            //MaterialsList.ItemsSource = msvm.SearchResults;
-            ProjectsListView.ItemsSource = msvm.SearchResults;
-
+            ProjectsListView.ItemsSource = mss.SearchResults;
+            
         }
 
         private void Search_TextChanged(object sender, TextChangedEventArgs e)
         {
-            msvm.PerformSearch(txbSeachbar.Text);
+            mss.PerformSearch(txbSearchbar.Text);
         }
 
         private void txbSeachbar_GotFocus(object sender, RoutedEventArgs e)
         {
-            txbSeachbar.Text = "";
+            txbSearchbar.Text = "";
         }
 
         private void ProjectsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            lblMaterialName.Content = "Materiale: " + msvm.SearchResults[ProjectsListView.SelectedIndex].Name;
-            lblMaterialQuantity.Content = "Antal: " + msvm.SearchResults[ProjectsListView.SelectedIndex].Quantity;
+            lblMaterialName.Content = "Materiale: " + mss.SearchResults[ProjectsListView.SelectedIndex].Name;
+            lblMaterialQuantity.Content = "Antal: " + mss.SearchResults[ProjectsListView.SelectedIndex].Quantity;
+        }
+
+        private void ProjectsListView_GotFocus(object sender, RoutedEventArgs e)
+        {
+            AddMaterialView addMaterialViewWindow = new AddMaterialView();
+            addMaterialViewWindow.Show();
         }
     }
 }

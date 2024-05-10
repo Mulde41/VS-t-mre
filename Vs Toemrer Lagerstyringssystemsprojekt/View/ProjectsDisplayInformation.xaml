@@ -36,7 +36,7 @@
                Content="{Binding SelectedProject.Description}"
                Margin="345,22,35,285"
                Background="LightGray" />
-        <TextBox x:Name="txbSeachbar"
+        <TextBox x:Name="txbSearchbar"
                  HorizontalAlignment="Left"
                  Margin="20,186,0,0"
                  TextWrapping="Wrap"
@@ -51,7 +51,8 @@
                   Margin="20,225,0,26"
                   HorizontalAlignment="Left"
                   Width="300"
-                  SelectionChanged="ProjectsListView_SelectionChanged">
+                  SelectedItem="{Binding SelectedMaterial}"
+                  SelectionChanged="ProjectsListView_SelectionChanged" GotFocus="ProjectsListView_GotFocus">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Navn"

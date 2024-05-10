@@ -18,7 +18,11 @@
 
         </StackPanel>
 
-        <ListBox x:Name="ProjectsListBox" DockPanel.Dock="Left" Width="100" Background="LightGray" DisplayMemberPath="Title" GotFocus="ProjectsListBoxFocus"  SelectedItem="{Binding SelectedProject}" ItemsSource="{Binding ProjectsVM}"/>
+        <ListBox x:Name="ProjectsListBox" DockPanel.Dock="Left" Width="100" Background="LightGray" DisplayMemberPath="Title" GotFocus="ProjectsListBoxFocus"  SelectedItem="{Binding SelectedProject}" ItemsSource="{Binding ProjectsVM}">
+            <ListBox.DataContext>
+                <Viewmodel:MainViewModel/>
+            </ListBox.DataContext>
+        </ListBox>
 
         <ContentControl x:Name="MainContent" >
             <StackPanel/>
