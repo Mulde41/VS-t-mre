@@ -8,7 +8,7 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositories
 {
-    public class NailRepository : IRepository<Nail>
+    public class NailRepository : IRepository<IMaterial>
     {
         private List<Nail> _nail_Materials = new List<Nail>();
         private bool _isInitialized = false;
@@ -73,7 +73,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
             _isInitialized = true;
         }
 
-        public IEnumerable<Nail> Get(string partialName)
+        public IEnumerable<IMaterial> Get(string partialName)
         {
             List<Nail> matchingNails = new List<Nail>();
 

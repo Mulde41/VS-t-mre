@@ -8,7 +8,7 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositories
 {
-    public class ScrewRepository : IRepository<Screw>
+    public class ScrewRepository : IRepository<IMaterial>
     {
         private List<Screw> _screw_Materials = new List<Screw>();
         private bool _isInitialized = false;
@@ -74,7 +74,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
             _isInitialized = true; // Ensures initialization happens only once
         }
 
-        public IEnumerable<Screw> Get(string partialName)
+        public IEnumerable<IMaterial> Get(string partialName)
         {
             List<Screw> matchingScrews = new List<Screw>();
 

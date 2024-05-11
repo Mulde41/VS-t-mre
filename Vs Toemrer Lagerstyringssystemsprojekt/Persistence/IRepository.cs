@@ -8,7 +8,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 {
     public interface IRepository<T>
     {
-        IEnumerable<T> Get(string Identifier);
-        List<T> GetAll();
+        IEnumerable<T> Get(string searchTerm);
+        //List<T> GetAll();
     }
 }

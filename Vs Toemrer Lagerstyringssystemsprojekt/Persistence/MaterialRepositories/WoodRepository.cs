@@ -9,7 +9,7 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositories
 {
-    public class WoodRepository : IRepository<Wood>
+    public class WoodRepository : IRepository<IMaterial>
     {
         public List<Wood> _wood_Materials = new List<Wood>();
         private bool _isInitialized = false;
@@ -79,7 +79,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
             return _wood_Materials;
         }
 
-        public IEnumerable<Wood> Get(string partialName)
+        public IEnumerable<IMaterial> Get(string partialName)
         {
             // This list will hold all the wood items that contain the partialName in their Name property.
             List<Wood> matchingWoods = new List<Wood>();
