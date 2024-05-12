@@ -17,9 +17,9 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        private IRepository<IMaterial> woodRepository = new WoodRepository();
-        IRepository<IMaterial> nailRepository = new NailRepository();
-        ScrewRepository screwRepository = new ScrewRepository();
+        private IRepository<IMaterial> _woodRepository = new WoodRepository();
+        private IRepository<IMaterial> _nailRepository = new NailRepository();
+        private IRepository<IMaterial> _screwRepository = new ScrewRepository();
 
         MaterialSearchService<IMaterial> _searchService;
 
@@ -28,7 +28,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 
         public MaterialSearchHandler()
         {
-            _searchService = new MaterialSearchService<IMaterial>(woodRepository, nailRepository, screwRepository);
+            _searchService = new MaterialSearchService<IMaterial>(_woodRepository, _nailRepository, _screwRepository);
             SearchResults = new ObservableCollection<IMaterial>();
         }
         public void PerformSearch(string searchParameter)
