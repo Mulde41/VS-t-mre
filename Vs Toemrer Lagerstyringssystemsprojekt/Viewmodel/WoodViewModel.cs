@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
-    public class WoodViewModel
+    public class WoodViewModel : IMaterial
     {
         public string Sort {  get; set; }
         public string Type { get; set; }
@@ -17,6 +18,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
         public double Length { get; set; }
         public int Quantity { get; set; }
         public string Treatment { get; set; }
+        public string Name { get => $"{Sort} {Type} {Treatment} {Height}x{Length}x{Width}"; }
 
         public WoodViewModel(Wood wood)
         { 

@@ -11,7 +11,7 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
 {
-    public class ProjectViewModel
+    public class ProjectViewModel 
     {
         public string Title { get; set; }
         public string Offer { get; set; }
