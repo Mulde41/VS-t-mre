@@ -17,9 +17,9 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        private IRepository<IMaterial> _woodRepository = new WoodRepository();
-        private IRepository<IMaterial> _nailRepository = new NailRepository();
-        private IRepository<IMaterial> _screwRepository = new ScrewRepository();
+        private IRepository<IMaterial> _woodRepository = WoodRepository.Instance;
+        private IRepository<IMaterial> _nailRepository = NailRepository.Instance;
+        private IRepository<IMaterial> _screwRepository = ScrewRepository.Instance;
 
         MaterialSearchService<IMaterial> _searchService;
 

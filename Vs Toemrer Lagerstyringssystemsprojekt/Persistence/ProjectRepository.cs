@@ -23,7 +23,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 
 
 
-        public ProjectRepository()
+        private ProjectRepository()
         {
             InitializeRepository();
         }

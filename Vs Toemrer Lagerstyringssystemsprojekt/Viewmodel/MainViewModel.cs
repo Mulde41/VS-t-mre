@@ -33,10 +33,10 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
         public MainViewModel()
         {
             //Repo instantiation
-            projectRepo = new ProjectRepository();
-            woodRepo = new WoodRepository();
-            nailRepo = new NailRepository();
-            screwRepo = new ScrewRepository();
+            projectRepo = ProjectRepository.Instance;
+            woodRepo = WoodRepository.Instance;
+            nailRepo = NailRepository.Instance;
+            screwRepo = ScrewRepository.Instance;
 
             //VM lists
             ProjectsVM= new ObservableCollection<ProjectViewModel>(projectRepo.GetAll().Select(project => new ProjectViewModel(project)));

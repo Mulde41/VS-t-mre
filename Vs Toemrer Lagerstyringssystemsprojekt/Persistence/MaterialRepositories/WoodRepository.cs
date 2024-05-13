@@ -15,7 +15,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
         private bool _isInitialized = false;
         private static WoodRepository _instance;
         private static readonly object _lock = new object();
-        public WoodRepository()
+        private WoodRepository()
         {
             InitializeRepository();
         }

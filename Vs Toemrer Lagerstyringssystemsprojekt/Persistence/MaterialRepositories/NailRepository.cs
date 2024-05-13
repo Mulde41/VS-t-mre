@@ -15,7 +15,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
         private static NailRepository _instance;
         private static readonly object _lock = new object();
 
-        public NailRepository()
+        private NailRepository()
         {
             InitializeRepository();
         }
@@ -28,13 +28,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
             {
                 if (_instance == null)
                 {
-                    lock (_lock) // Ensure thread safety
-                    {
-                        if (_instance == null)
-                        {
-                            _instance = new NailRepository();
-                        }
-                    }
+                    _instance = new NailRepository();
                 }
                 return _instance;
             }
