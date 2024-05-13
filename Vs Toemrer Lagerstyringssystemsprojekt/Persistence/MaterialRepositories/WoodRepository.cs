@@ -73,12 +73,6 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
             }
             _isInitialized = true; // Ensures initialization happens only once
         }
-
-        public List<Wood> GetAll()
-        {
-            return _wood_Materials;
-        }
-
         public IEnumerable<IMaterial> Get(string partialName)
         {
             // This list will hold all the wood items that contain the partialName in their Name property.
@@ -96,5 +90,11 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
             // Return the list of matching woods
             return matchingWoods;
         }
+
+        public List<Wood> GetAll()
+        {
+            return _wood_Materials;
+        }
+
     }
 }
