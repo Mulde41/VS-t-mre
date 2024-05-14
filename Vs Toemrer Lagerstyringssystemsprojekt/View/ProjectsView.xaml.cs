@@ -12,17 +12,17 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     public partial class ProjectsView : UserControl
     {
         ProjectMakerView mainContent = new ProjectMakerView();
-        private MainViewModel mvm = new MainViewModel();
+        private MainViewModel _mvm = new MainViewModel();
         public ProjectsView()
         {
-            this.DataContext = mvm;
+            this.DataContext = _mvm;
             InitializeComponent();
             LoadLists();
         }
 
         private void LoadLists()
         {
-            ProjectsListBox.ItemsSource = mvm.ProjectsVM;
+            ProjectsListBox.ItemsSource = _mvm.ProjectsVM;
         }
         private void ProjectsListBoxFocus(object sender, RoutedEventArgs e)
         {

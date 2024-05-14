@@ -15,7 +15,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
     public class ProjectRepository
     {
 
-        private List<Project> projects = new List<Project>();
+        private List<Project> _projects = new List<Project>();
         private bool _isInitialized = false;
         private static ProjectRepository _instance;
         private static readonly object _lock = new object();
@@ -73,7 +73,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
                                        reader["Address"].ToString(),
                                        reader["Description"].ToString()
                                     );
-                                projects.Add(project);
+                                _projects.Add(project);
                             }
                         }
                     }
@@ -97,13 +97,13 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
                 command.Parameters.Add("@Description", SqlDbType.NVarChar).Value = project.Description;
                 command.Parameters.Add("@Address", SqlDbType.NVarChar).Value = project.Address;
                 command.ExecuteNonQuery();
-                projects.Add(project);
+                _projects.Add(project);
             }
         }
 
         public List<Project> GetAll()
         {
-            return projects;
+            return _projects;
         }
     }
 }

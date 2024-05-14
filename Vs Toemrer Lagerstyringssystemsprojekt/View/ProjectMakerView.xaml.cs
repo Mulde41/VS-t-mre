@@ -10,11 +10,11 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     public partial class ProjectMakerView : UserControl
     {
 
-        private MainViewModel mvm = new MainViewModel();
+        private MainViewModel _mvm = new MainViewModel();
 
         public ProjectMakerView()
         {
-            this.DataContext = mvm;
+            this.DataContext = _mvm;
             InitializeComponent();
             Update();
         }
@@ -216,7 +216,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 
         private void btnSaveProject_Click(object sender, RoutedEventArgs e)
         {
-            mvm.CreateProject(txbTitle.Text, txbOffer.Text, txbAddress.Text, txbDescription.Text);
+            _mvm.CreateProject(txbTitle.Text, txbOffer.Text, txbAddress.Text, txbDescription.Text);
 
             txbTitle.Text = "Titel"; // Clear the placeholder text
             txbTitle.TextAlignment = TextAlignment.Center; // Change text alignment to left

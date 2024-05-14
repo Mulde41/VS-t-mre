@@ -9,7 +9,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 {
     public static class RepositoryHelper
     {
-        private static IConfigurationRoot configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-        public static string? connectionString = configuration.GetConnectionString("MyDBconnection");
+        private static IConfigurationRoot _configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+        public static string? connectionString = _configuration.GetConnectionString("MyDBconnection");
     }
 }
