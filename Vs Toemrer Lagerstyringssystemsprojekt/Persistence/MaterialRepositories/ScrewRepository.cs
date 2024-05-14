@@ -25,14 +25,10 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositorie
         {
             get
             {
-                if (_instance == null)
                 {
-                    lock (_lock) // Ensure thread safety
+                    if (_instance == null)
                     {
-                        if (_instance == null)
-                        {
-                            _instance = new ScrewRepository();
-                        }
+                        _instance = new ScrewRepository();
                     }
                 }
                 return _instance;

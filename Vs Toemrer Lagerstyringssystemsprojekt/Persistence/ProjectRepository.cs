@@ -36,14 +36,10 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
         {
             get
             {
-                if (_instance == null)
                 {
-                    lock (_lock) // Ensure thread safety
+                    if (_instance == null)
                     {
-                        if (_instance == null)
-                        {
-                            _instance = new ProjectRepository();
-                        }
+                        _instance = new ProjectRepository();
                     }
                 }
                 return _instance;
