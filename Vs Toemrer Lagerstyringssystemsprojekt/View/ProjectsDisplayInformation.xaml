@@ -8,21 +8,24 @@
              d:DesignHeight="450"
              d:DesignWidth="600">
     <Grid>
-        <Label x:Name="lblTitle" Content="{Binding SelectedProject.Title}"
+        <Label x:Name="lblTitle"
+               Content="{Binding SelectedProject.Title}"
                HorizontalAlignment="Left"
                Margin="20,22,0,0"
                VerticalAlignment="Top"
                Background="LightGray"
                Height="25"
                Width="300" />
-        <Label x:Name="lblOffor" Content="{Binding SelectedProject.Offer}"
+        <Label x:Name="lblOffor"
+               Content="{Binding SelectedProject.Offer}"
                HorizontalAlignment="Left"
                Margin="20,80,0,0"
                VerticalAlignment="Top"
                Background="LightGray"
                Height="25"
                Width="300" />
-        <Label x:Name="lblAddress" Content="{Binding SelectedProject.Address}"
+        <Label x:Name="lblAddress"
+               Content="{Binding SelectedProject.Address}"
                HorizontalAlignment="Left"
                Margin="20,140,0,0"
                VerticalAlignment="Top"
@@ -33,8 +36,19 @@
                Content="{Binding SelectedProject.Description}"
                Margin="345,22,35,285"
                Background="LightGray" />
-        <ListBox x:Name="lbMaterialsList" Margin="20,225,300,26" DisplayMemberPath="Name"/>
-        <TextBox x:Name="txbSearch" HorizontalAlignment="Left" Margin="20,186,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="140" TextChanged="Search_TextChanged"/>
+        <ListBox x:Name="lbMaterialsList"
+                 Margin="20,225,300,26"
+                 DisplayMemberPath="Name" />
+        <TextBox x:Name="txbSearch"
+                 HorizontalAlignment="Left"
+                 Margin="20,186,0,0"
+                 TextWrapping="Wrap"
+                 Text="Søg"
+                 VerticalAlignment="Top"
+                 HorizontalContentAlignment="Center"
+                 Width="140"
+                 TextChanged="Search_TextChanged"
+                 GotFocus="txbSearch_GotFocus" />
     </Grid>
 
 

@@ -37,5 +37,14 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         {
             _msvm.PerformSearch(txbSearch.Text);
         }
+
+        private void txbSearch_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (txbSearch.Text == "Søg")
+            {
+                txbSearch.Text = "";
+                txbSearch.HorizontalContentAlignment = HorizontalAlignment.Left;
+            }
+        }
     }
 }
