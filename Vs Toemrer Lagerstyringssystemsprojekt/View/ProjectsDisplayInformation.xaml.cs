@@ -21,7 +21,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
     /// </summary>
     public partial class ProjectsDisplayInformation : UserControl
     {
-        MaterialSearchHandler _msvm = new MaterialSearchHandler();
+        MaterialSearchHandler msh = new MaterialSearchHandler();
         public ProjectsDisplayInformation()
         {
             InitializeComponent();
@@ -29,13 +29,13 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         }
         private void LoadLists()
         {
-            lbMaterialsList.ItemsSource = _msvm.SearchResults;
+            lbMaterialsList.ItemsSource = msh.SearchResults;
 
         }
 
         private void Search_TextChanged(object sender, TextChangedEventArgs e)
         {
-            _msvm.PerformSearch(txbSearch.Text);
+            msh.PerformSearch(txbSearch.Text);
         }
 
         private void txbSearch_GotFocus(object sender, RoutedEventArgs e)
