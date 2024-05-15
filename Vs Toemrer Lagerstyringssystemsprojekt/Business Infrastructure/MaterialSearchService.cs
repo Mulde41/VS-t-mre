@@ -11,7 +11,7 @@ using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence.MaterialRepositories;
 
 namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Business_Infrastructure
 {
-    // Denne klasse er en del af GRASP. Pure fabrication. man laver en klasse der ikke eksistere i domænet. det er de .9 pattern i GRASP
+    // Denne klasse er en del af GRASP (Pure Fabrication). Man laver en klasse, der ikke eksisterer i domænet. Det er en af de ni patterns i GRASP.
     public class MaterialSearchService<T>
     {
         private IRepository<T> _repository1;

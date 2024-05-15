@@ -8,8 +8,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence
 {
     public interface IMaterial
     {
-        string Treatment { get; }
-        int Quantity { get; }
+        string Treatment { get; set; }
+        int Quantity { get; set; }
         string Name { get; }
     }
 }
