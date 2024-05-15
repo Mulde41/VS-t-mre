@@ -18,10 +18,10 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
         public ProjectViewModel SelectedProject { get; set; }
 
         //Repositories
-        public ProjectRepository projectRepo;
-        public WoodRepository woodRepo;
-        public NailRepository nailRepo;
-        public ScrewRepository screwRepo;
+        public ProjectRepository _projectRepo;
+        public WoodRepository _woodRepo;
+        public NailRepository _nailRepo;
+        public ScrewRepository _screwRepo;
 
         //Observable collections
         public ObservableCollection<ProjectViewModel> ProjectsVM;
@@ -33,27 +33,27 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel
         public MainViewModel()
         {
             //Repo instantiation
-            projectRepo = ProjectRepository.Instance;
-            woodRepo = WoodRepository.Instance;
-            nailRepo = NailRepository.Instance;
-            screwRepo = ScrewRepository.Instance;
+            _projectRepo = ProjectRepository.Instance;
+            _woodRepo = WoodRepository.Instance;
+            _nailRepo = NailRepository.Instance;
+            _screwRepo = ScrewRepository.Instance;
 
             //VM lists
-            ProjectsVM= new ObservableCollection<ProjectViewModel>(projectRepo.GetAll().Select(project => new ProjectViewModel(project)));
-            WoodsVM = new ObservableCollection<WoodViewModel>(woodRepo.GetAll().Select(wood => new WoodViewModel(wood)));
-            NailsVM = new ObservableCollection<NailViewModel>(nailRepo.GetAll().Select(nail => new NailViewModel(nail)));
-            ScrewsVM = new ObservableCollection<ScrewViewModel>(screwRepo.GetAll().Select(screw => new ScrewViewModel(screw)));
+            ProjectsVM= new ObservableCollection<ProjectViewModel>(_projectRepo.GetAll().Select(project => new ProjectViewModel(project)));
+            WoodsVM = new ObservableCollection<WoodViewModel>(_woodRepo.GetAll().Select(wood => new WoodViewModel(wood)));
+            NailsVM = new ObservableCollection<NailViewModel>(_nailRepo.GetAll().Select(nail => new NailViewModel(nail)));
+            ScrewsVM = new ObservableCollection<ScrewViewModel>(_screwRepo.GetAll().Select(screw => new ScrewViewModel(screw)));
         }
 
         public void CreateProject(string title, string offer, string address, string projectDescription)
         {
             Project project = new Project(title, offer, address, projectDescription);
-            projectRepo.Add(project);
+            _projectRepo.Add(project);
             ProjectsVM.Add(new ProjectViewModel(project));
         }
         public List<Project> GetAll()
         {
-            return projectRepo.GetAll();
+            return _projectRepo.GetAll();
         }
     }
 }

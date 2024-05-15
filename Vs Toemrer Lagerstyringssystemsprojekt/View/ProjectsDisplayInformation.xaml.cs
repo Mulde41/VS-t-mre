@@ -29,13 +29,13 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
         }
         private void LoadLists()
         {
-            MaterialsList.ItemsSource = _msvm.SearchResults;
+            lbMaterialsList.ItemsSource = _msvm.SearchResults;
 
         }
 
         private void Search_TextChanged(object sender, TextChangedEventArgs e)
         {
-            _msvm.PerformSearch(Search.Text);
+            _msvm.PerformSearch(txbSearch.Text);
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
 
         private void LoadLists()
         {
-            ProjectsListBox.ItemsSource = _mvm.ProjectsVM;
+            lbProjectsListBox.ItemsSource = _mvm.ProjectsVM;
         }
         private void ProjectsListBoxFocus(object sender, RoutedEventArgs e)
         {

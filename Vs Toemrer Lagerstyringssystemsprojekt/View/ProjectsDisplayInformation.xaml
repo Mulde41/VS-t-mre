@@ -29,12 +29,12 @@
                Background="LightGray"
                Height="25"
                Width="300" />
-        <Label x:Name="ProjectDescription"
+        <Label x:Name="lblProjectDescription"
                Content="{Binding SelectedProject.Description}"
                Margin="345,22,35,285"
                Background="LightGray" />
-        <ListBox x:Name="MaterialsList" Margin="20,225,300,26" DisplayMemberPath="Name"/>
-        <TextBox x:Name="Search" HorizontalAlignment="Left" Margin="20,186,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="140" TextChanged="Search_TextChanged"/>
+        <ListBox x:Name="lbMaterialsList" Margin="20,225,300,26" DisplayMemberPath="Name"/>
+        <TextBox x:Name="txbSearch" HorizontalAlignment="Left" Margin="20,186,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="140" TextChanged="Search_TextChanged"/>
     </Grid>
 
 
