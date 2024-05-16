@@ -38,6 +38,8 @@ namespace Vs_Toemrer_Lagerstyringssystemsprojekt.View
             msh.PerformSearch(txbSearch.Text);
         }
 
+
+        // Clear search box when clicked
         private void txbSearch_GotFocus(object sender, RoutedEventArgs e)
         {
             if (txbSearch.Text == "Søg")
