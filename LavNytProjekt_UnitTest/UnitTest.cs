@@ -2,11 +2,12 @@ using System.Runtime.CompilerServices;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Model;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Persistence;
 using Vs_Toemrer_Lagerstyringssystemsprojekt.Viewmodel;
+using Vs_Toemrer_Lagerstyringssystemsprojekt.Business_Infrastructure;
 
 namespace LavNytProjekt_UnitTest
 {
     [TestClass]
-    public class LavNytProjectUnitTest1
+    public class UnitTest
     {
         ProjectRepository projectRepo;
         List<Project> testList;
@@ -56,5 +57,8 @@ namespace LavNytProjekt_UnitTest
             // Assert
             Assert.AreEqual(expectedTitle, getProj1.Title);
         }
+
+
+
     }
 }
